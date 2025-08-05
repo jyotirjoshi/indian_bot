@@ -3,7 +3,7 @@ name: Run AI Bot Daily
 on:
   schedule:
     - cron: "15 3 * * 1-5" # 9:15 AM IST, Mon-Fri
-  workflow_dispatch: # Optional: manual trigger
+  workflow_dispatch: # Manual trigger
 
 jobs:
   run-ai:
@@ -11,32 +11,43 @@ jobs:
     timeout-minutes: 375 # 6 hr 15 min runtime
 
     steps:
+      # 1️⃣ Checkout repo
       - uses: actions/checkout@v4
 
+      # 2️⃣ Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12.3"
 
+      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install -r requirements_enhanced.txt
 
+      # 4️⃣ Run bot and save logs
       - name: Run AI Bot and Save Logs
         run: |
           mkdir -p logs
           touch logs/output.log
           echo "Starting scheduled bot run at $(date)" | tee -a logs/output.log
           
-          end_time=$(date -u -d "today 10:00 UTC" +%s) # 3:30 PM IST
+          # Market close time (3:30 PM IST == 10:00 UTC)
+          end_time=$(date -u -d "today 10:00 UTC" +%s)
+
           while [ $(date +%s) -lt $end_time ]; do
             echo "Launching bot at $(date)" | tee -a logs/output.log
-            python start_enhanced_bot.py --auto 2>&1 | tee -a logs/output.log || echo "Bot crashed with exit code $?" | tee -a logs/output.log
+            
+            # Run bot and capture any crash errors
+            python start_enhanced_bot.py --auto 2>&1 | tee -a logs/output.log || \
+              echo "Bot crashed with exit code $? at $(date)" | tee -a logs/output.log
+            
             echo "Bot exited at $(date), restarting in 30 seconds..." | tee -a logs/output.log
             sleep 30
           done
 
+      # 5️⃣ Upload logs for download
       - name: Upload Logs
         uses: actions/upload-artifact@v4
         with:
