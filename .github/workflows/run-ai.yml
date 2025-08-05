@@ -2,13 +2,13 @@ name: Run Indian Bot on Schedule
 
 on:
   schedule:
-    - cron: '45 3 * * *' # 9:15 AM IST
-  workflow_dispatch:
+    - cron: '45 3 * * 1-5' # 9:15 AM IST, Mon-Fri
+  workflow_dispatch: # Manual trigger
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 375
+    timeout-minutes: 375 # 6hr 15min
 
     steps:
       - name: 1. Checkout Repository
@@ -19,19 +19,33 @@ jobs:
         with:
           python-version: '3.12.3'
           cache: 'pip'
-          # Explicitly tell the cache where to find the dependencies file
-          cache-dependency-path: requirements_enhanced.txt # <-- THE FIX IS HERE
+          cache-dependency-path: requirements_enhanced.txt
 
       - name: 3. Install Dependencies
         run: pip install -r requirements_enhanced.txt
 
-      - name: 4. Run the Bot and Capture Logs
-        # IMPORTANT: Remember to add the 'env:' block here with your GitHub Secrets for API keys.
-        run: python start_enhanced_bot.py --auto > bot.log 2>&1
+      - name: 4. Run the Bot (Live Logs + Auto-Restart)
+        run: |
+          mkdir -p logs
+          LOG_FILE="logs/bot-$(date +'%Y-%m-%d')-${GITHUB_RUN_ID}.log"
+          echo "Starting bot session at $(date)" | tee -a "$LOG_FILE"
 
-      - name: 5. Upload Logs on Completion/Timeout
+          # Market close time (3:30 PM IST = 10:00 UTC)
+          END_TIME=$(date -u -d "today 10:00 UTC" +%s)
+
+          while [ $(date +%s) -lt $END_TIME ]; do
+            echo "Launching bot at $(date)" | tee -a "$LOG_FILE"
+            python start_enhanced_bot.py --auto 2>&1 | tee -a "$LOG_FILE" || \
+              echo "Bot crashed with exit code $? at $(date)" | tee -a "$LOG_FILE"
+            echo "Bot stopped. Restarting in 30 seconds..." | tee -a "$LOG_FILE"
+            sleep 30
+          done
+
+          echo "Bot session ended at $(date)" | tee -a "$LOG_FILE"
+
+      - name: 5. Upload Logs as Artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: bot-logs-${{ github.run_id }}
-          path: bot.log
+          name: bot-logs-$(date +'%Y-%m-%d')-${{ github.run_id }}
+          path: logs/
