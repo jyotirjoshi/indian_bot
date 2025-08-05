@@ -1,0 +1,42 @@
+name: Run AI Bot Daily
+
+on:
+  schedule:
+    - cron: "15 3 * * 1-5" # 9:15 AM IST, Mon-Fri
+  workflow_dispatch: # Optional: manual trigger
+
+jobs:
+  run-ai:
+    runs-on: ubuntu-latest
+    timeout-minutes: 375 # 6 hr 15 min runtime
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12.3"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements_enhanced.txt
+
+      - name: Run AI Bot and Save Logs
+        run: |
+          mkdir -p logs
+          # Loop until market close in case GitHub restarts the job
+          end_time=$(date -u -d "today 10:00 UTC" +%s) # 3:30 PM IST = 10:00 UTC
+          while [ $(date +%s) -lt $end_time ]; do
+            echo "Starting bot at $(date)"
+            python start_enhanced_bot.py --auto 2>&1 | tee -a logs/output.log
+            echo "Bot stopped at $(date), restarting if before market close..."
+            sleep 30
+          done
+
+      - name: Upload Logs
+        uses: actions/upload-artifact@v3
+        with:
+          name: bot-logs
+          path: logs/output.log
