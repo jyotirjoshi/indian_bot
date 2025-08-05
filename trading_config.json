@@ -1,0 +1,34 @@
+{
+    "capital": 50000,
+    "broker_type": "discount",
+    "trading_type": "aggressive_intraday",
+    "risk_management": {
+        "max_risk_per_trade": 0.025,
+        "max_portfolio_risk": 0.08,
+        "max_positions": 5
+    },
+    "watchlist": ["SBIN", "TCS", "INFY", "ITC", "RELIANCE"],
+    "trading_parameters": {
+        "min_signal_strength": 0.3,
+        "min_trade_value": 8000,
+        "max_allocation_per_trade": 0.4,
+        "cycle_interval_minutes": 2,
+        "force_close_time": "15:20",
+        "stop_loss_pct": 2.0,
+        "target_pct": 7.0,
+        "partial_profit_levels": [2.0, 4.0, 6.0],
+        "aggressive_mode": true
+    },
+    "profit_maximization": {
+        "multiple_entries": true,
+        "pyramid_trading": true,
+        "scalping_enabled": true,
+        "momentum_trading": true,
+        "gap_trading": true
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(levelname)s - %(message)s",
+        "file": "aggressive_profit_bot.log"
+    }
+}

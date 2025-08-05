@@ -1,0 +1,2223 @@
+2025-08-04 21:04:43,974 - INFO - Enhanced Trading Bot started
+2025-08-04 21:04:43,976 - INFO - Market is closed
+2025-08-04 21:07:05,788 - INFO - Enhanced Trading Bot stopped
+2025-08-04 21:13:07,153 - INFO - Enhanced Trading Bot started
+2025-08-04 21:13:07,161 - INFO - Market is closed
+2025-08-04 21:13:34,474 - INFO - Enhanced Trading Bot stopped
+2025-08-04 21:15:23,127 - INFO - Enhanced Trading Bot initialized with Rs.50,000.00 capital
+2025-08-04 21:15:23,129 - INFO - Enhanced Trading Bot started
+2025-08-04 21:15:23,129 - INFO - Market is closed
+2025-08-04 21:15:30,917 - INFO - Enhanced Trading Bot stopped
+2025-08-04 22:33:28,886 - INFO - Enhanced ML Swing Trading Bot initialized with Rs.50,000.00 capital
+2025-08-04 22:34:06,320 - INFO - Enhanced ML Swing Trading Bot initialized with Rs.50,000.00 capital
+2025-08-04 22:35:33,677 - INFO - Enhanced ML Swing Trading Bot initialized with Rs.50,000.00 capital
+2025-08-04 22:35:33,678 - INFO - 🧠 Initializing ML models...
+2025-08-04 22:35:33,678 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-04 22:35:33,678 - INFO - 📊 Fetching fresh training data from market...
+2025-08-04 22:35:33,679 - INFO - Fetching 365 days of training data for 6 symbols...
+2025-08-04 22:35:33,679 - INFO - [1/6] Fetching data for SBIN...
+2025-08-04 22:35:40,297 - INFO - ✅ SBIN: 365 days of data collected
+2025-08-04 22:35:41,299 - INFO - [2/6] Fetching data for TCS...
+2025-08-04 22:35:41,512 - INFO - ✅ TCS: 365 days of data collected
+2025-08-04 22:35:42,514 - INFO - [3/6] Fetching data for HDFCBANK...
+2025-08-04 22:35:42,730 - INFO - ✅ HDFCBANK: 365 days of data collected
+2025-08-04 22:35:43,730 - INFO - [4/6] Fetching data for INFY...
+2025-08-04 22:35:43,971 - INFO - ✅ INFY: 365 days of data collected
+2025-08-04 22:35:44,972 - INFO - [5/6] Fetching data for ITC...
+2025-08-04 22:35:45,198 - INFO - ✅ ITC: 365 days of data collected
+2025-08-04 22:35:46,200 - INFO - [6/6] Fetching data for RELIANCE...
+2025-08-04 22:35:46,602 - INFO - ✅ RELIANCE: 365 days of data collected
+2025-08-04 22:35:47,604 - INFO - Training data collection complete: 6/6 successful
+2025-08-04 22:35:47,630 - INFO - Saved SBIN data to training_data\SBIN_data.csv
+2025-08-04 22:35:47,644 - INFO - Saved TCS data to training_data\TCS_data.csv
+2025-08-04 22:35:47,651 - INFO - Saved HDFCBANK data to training_data\HDFCBANK_data.csv
+2025-08-04 22:35:47,659 - INFO - Saved INFY data to training_data\INFY_data.csv
+2025-08-04 22:35:47,664 - INFO - Saved ITC data to training_data\ITC_data.csv
+2025-08-04 22:35:47,670 - INFO - Saved RELIANCE data to training_data\RELIANCE_data.csv
+2025-08-04 22:35:47,672 - INFO - Training data saved to training_data directory
+2025-08-04 22:35:47,672 - INFO - 📈 Training data summary:
+2025-08-04 22:35:47,672 - INFO -    Symbols: 6
+2025-08-04 22:35:47,673 - INFO -    Total data points: 2,190
+2025-08-04 22:35:47,673 - INFO -    Average days per symbol: 365
+2025-08-04 22:35:47,674 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-04 22:35:47,676 - INFO - Training ML models...
+2025-08-04 22:36:11,086 - INFO - LSTM model trained successfully
+2025-08-04 22:36:11,505 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-04 22:36:38,201 - INFO - LSTM model trained successfully
+2025-08-04 22:36:38,800 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-04 22:37:07,139 - INFO - LSTM model trained successfully
+2025-08-04 22:37:07,644 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-04 22:37:35,868 - INFO - LSTM model trained successfully
+2025-08-04 22:37:36,443 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-04 22:38:03,143 - INFO - LSTM model trained successfully
+2025-08-04 22:38:03,637 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-04 22:38:38,416 - INFO - LSTM model trained successfully
+2025-08-04 22:38:39,520 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-04 22:38:39,521 - INFO - ML models training completed. Success rate: 12/12
+2025-08-04 22:38:39,521 - INFO - 💾 Saving trained models...
+2025-08-04 22:38:39,523 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-04 22:38:39,788 - INFO - ✅ ML models trained and saved successfully!
+2025-08-04 22:38:39,788 - INFO - 🎯 ML capabilities enabled:
+2025-08-04 22:38:39,788 - INFO -    ✓ LSTM price prediction
+2025-08-04 22:38:39,789 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-04 22:38:39,789 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-04 22:38:39,789 - INFO -    ✓ News sentiment analysis
+2025-08-04 22:38:39,790 - INFO -    ✓ Ensemble signal fusion
+2025-08-04 22:38:39,794 - INFO - Enhanced ML Swing Trading Bot started
+2025-08-04 22:38:39,795 - INFO - Market is closed
+2025-08-04 22:38:59,132 - INFO - Enhanced ML Swing Trading Bot stopped
+2025-08-05 09:22:00,083 - INFO - Enhanced ML Swing Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 09:22:00,083 - INFO - 🧠 Initializing ML models...
+2025-08-05 09:22:00,294 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 09:22:00,378 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 09:22:00,378 - INFO - 📁 Using cached training data
+2025-08-05 09:22:00,378 - INFO - 📈 Training data summary:
+2025-08-05 09:22:00,378 - INFO -    Symbols: 6
+2025-08-05 09:22:00,378 - INFO -    Total data points: 2,190
+2025-08-05 09:22:00,378 - INFO -    Average days per symbol: 365
+2025-08-05 09:22:00,378 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 09:22:00,378 - INFO - Training ML models...
+2025-08-05 09:22:39,603 - INFO - LSTM model trained successfully
+2025-08-05 09:22:41,268 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 09:23:17,806 - INFO - LSTM model trained successfully
+2025-08-05 09:23:18,313 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 09:23:49,504 - INFO - LSTM model trained successfully
+2025-08-05 09:23:50,012 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 09:24:20,419 - INFO - LSTM model trained successfully
+2025-08-05 09:24:20,924 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 09:24:50,969 - INFO - LSTM model trained successfully
+2025-08-05 09:24:51,632 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 09:25:22,934 - INFO - LSTM model trained successfully
+2025-08-05 09:25:23,432 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 09:25:23,434 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 09:25:23,434 - INFO - 💾 Saving trained models...
+2025-08-05 09:25:23,436 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 09:25:23,616 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 09:25:23,616 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 09:25:23,618 - INFO -    ✓ LSTM price prediction
+2025-08-05 09:25:23,618 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 09:25:23,618 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 09:25:23,618 - INFO -    ✓ News sentiment analysis
+2025-08-05 09:25:23,618 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 09:25:23,621 - INFO - Enhanced ML Swing Trading Bot started
+2025-08-05 09:25:23,621 - INFO - === TRADING CYCLE START ===
+2025-08-05 09:25:27,180 - INFO - [PRICE] SBIN: Rs.800.85
+2025-08-05 09:25:27,368 - INFO - [DATA] Fetched 90 days of historical data for SBIN
+2025-08-05 09:25:28,600 - ERROR - Error scanning SBIN: name 'signal_data' is not defined
+2025-08-05 09:25:28,989 - INFO - [PRICE] TCS: Rs.3069.00
+2025-08-05 09:25:29,288 - INFO - [DATA] Fetched 90 days of historical data for TCS
+2025-08-05 09:25:29,834 - ERROR - Error scanning TCS: name 'signal_data' is not defined
+2025-08-05 09:25:30,330 - INFO - [PRICE] HDFCBANK: Rs.1974.10
+2025-08-05 09:25:30,789 - INFO - [DATA] Fetched 90 days of historical data for HDFCBANK
+2025-08-05 09:25:31,448 - INFO - [PRICE] INFY: Rs.1471.90
+2025-08-05 09:25:31,665 - INFO - [DATA] Fetched 90 days of historical data for INFY
+2025-08-05 09:25:32,576 - INFO - [PRICE] ITC: Rs.416.95
+2025-08-05 09:25:32,755 - INFO - [DATA] Fetched 90 days of historical data for ITC
+2025-08-05 09:25:33,596 - INFO - [PRICE] RELIANCE: Rs.1402.60
+2025-08-05 09:25:33,772 - INFO - [DATA] Fetched 90 days of historical data for RELIANCE
+2025-08-05 09:25:34,806 - INFO - [PRICE] ICICIBANK: Rs.1455.80
+2025-08-05 09:25:35,026 - INFO - [DATA] Fetched 90 days of historical data for ICICIBANK
+2025-08-05 09:25:36,042 - INFO - [PRICE] AXISBANK: Rs.1073.20
+2025-08-05 09:25:36,260 - INFO - [DATA] Fetched 90 days of historical data for AXISBANK
+2025-08-05 09:25:36,790 - ERROR - Error scanning AXISBANK: name 'signal_data' is not defined
+2025-08-05 09:25:36,792 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 09:25:36,792 - INFO - === TRADING CYCLE END ===
+2025-08-05 09:27:20,012 - INFO - Enhanced ML Swing Trading Bot stopped
+2025-08-05 09:27:53,413 - INFO - Enhanced ML Swing Trading Bot initialized with Rs.5,000.00 capital
+2025-08-05 09:27:53,413 - INFO - 🧠 Initializing ML models...
+2025-08-05 09:27:53,597 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 09:27:53,663 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 09:27:53,663 - INFO - 📁 Using cached training data
+2025-08-05 09:27:53,663 - INFO - 📈 Training data summary:
+2025-08-05 09:27:53,663 - INFO -    Symbols: 6
+2025-08-05 09:27:53,663 - INFO -    Total data points: 2,190
+2025-08-05 09:27:53,663 - INFO -    Average days per symbol: 365
+2025-08-05 09:27:53,666 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 09:27:53,666 - INFO - Training ML models...
+2025-08-05 09:28:59,725 - INFO - Enhanced ML Swing Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 09:28:59,725 - INFO - 🧠 Initializing ML models...
+2025-08-05 09:28:59,901 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 09:28:59,956 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 09:28:59,956 - INFO - 📁 Using cached training data
+2025-08-05 09:28:59,956 - INFO - 📈 Training data summary:
+2025-08-05 09:28:59,956 - INFO -    Symbols: 6
+2025-08-05 09:28:59,956 - INFO -    Total data points: 2,190
+2025-08-05 09:28:59,956 - INFO -    Average days per symbol: 365
+2025-08-05 09:28:59,956 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 09:28:59,956 - INFO - Training ML models...
+2025-08-05 09:29:30,137 - INFO - LSTM model trained successfully
+2025-08-05 09:29:30,683 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 09:29:58,465 - INFO - LSTM model trained successfully
+2025-08-05 09:29:58,967 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 09:30:27,901 - INFO - LSTM model trained successfully
+2025-08-05 09:30:28,479 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 09:30:57,005 - INFO - LSTM model trained successfully
+2025-08-05 09:30:57,516 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 09:31:24,850 - INFO - LSTM model trained successfully
+2025-08-05 09:31:25,336 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 09:31:52,249 - INFO - LSTM model trained successfully
+2025-08-05 09:31:52,768 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 09:31:52,770 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 09:31:52,770 - INFO - 💾 Saving trained models...
+2025-08-05 09:31:52,770 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 09:31:52,911 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 09:31:52,911 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 09:31:52,911 - INFO -    ✓ LSTM price prediction
+2025-08-05 09:31:52,915 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 09:31:52,915 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 09:31:52,915 - INFO -    ✓ News sentiment analysis
+2025-08-05 09:31:52,915 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 09:31:52,917 - INFO - Enhanced ML Swing Trading Bot started
+2025-08-05 09:31:52,917 - INFO - === TRADING CYCLE START ===
+2025-08-05 09:31:56,783 - INFO - [PRICE] TCS: Rs.3071.10
+2025-08-05 09:31:58,757 - ERROR - Historical data failed for TCS: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 09:31:58,954 - INFO - [PRICE] HDFCBANK: Rs.1971.70
+2025-08-05 09:32:00,465 - ERROR - Historical data failed for HDFCBANK: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 09:32:00,590 - INFO - [PRICE] INFY: Rs.1473.60
+2025-08-05 09:32:01,977 - ERROR - Historical data failed for INFY: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 09:32:02,113 - INFO - [PRICE] ITC: Rs.416.25
+2025-08-05 09:32:03,848 - ERROR - Historical data failed for ITC: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 09:32:05,815 - INFO - [PRICE] ICICIBANK: Rs.1457.20
+2025-08-05 09:32:07,450 - ERROR - Historical data failed for ICICIBANK: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 09:32:07,580 - INFO - [PRICE] AXISBANK: Rs.1077.40
+2025-08-05 09:32:09,356 - ERROR - Historical data failed for AXISBANK: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 09:32:09,360 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 09:32:09,360 - INFO - === TRADING CYCLE END ===
+2025-08-05 09:35:25,136 - INFO - Enhanced ML Swing Trading Bot stopped
+2025-08-05 09:35:39,961 - INFO - Enhanced ML Swing Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 09:35:39,963 - INFO - 🧠 Initializing ML models...
+2025-08-05 09:35:40,144 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 09:35:40,204 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 09:35:40,209 - INFO - 📁 Using cached training data
+2025-08-05 09:35:40,209 - INFO - 📈 Training data summary:
+2025-08-05 09:35:40,209 - INFO -    Symbols: 6
+2025-08-05 09:35:40,209 - INFO -    Total data points: 2,190
+2025-08-05 09:35:40,209 - INFO -    Average days per symbol: 365
+2025-08-05 09:35:40,209 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 09:35:40,209 - INFO - Training ML models...
+2025-08-05 09:36:11,877 - INFO - LSTM model trained successfully
+2025-08-05 09:36:12,426 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 09:36:46,039 - INFO - LSTM model trained successfully
+2025-08-05 09:36:46,623 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 09:37:24,127 - INFO - LSTM model trained successfully
+2025-08-05 09:37:25,025 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 09:37:59,922 - INFO - LSTM model trained successfully
+2025-08-05 09:38:00,433 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 09:38:27,299 - INFO - LSTM model trained successfully
+2025-08-05 09:38:27,795 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 09:38:55,117 - INFO - LSTM model trained successfully
+2025-08-05 09:38:55,698 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 09:38:55,700 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 09:38:55,700 - INFO - 💾 Saving trained models...
+2025-08-05 09:38:55,701 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 09:38:55,876 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 09:38:55,876 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 09:38:55,876 - INFO -    ✓ LSTM price prediction
+2025-08-05 09:38:55,877 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 09:38:55,877 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 09:38:55,877 - INFO -    ✓ News sentiment analysis
+2025-08-05 09:38:55,877 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 09:38:55,879 - INFO - Enhanced ML Swing Trading Bot started
+2025-08-05 09:38:55,879 - INFO - === TRADING CYCLE START ===
+2025-08-05 09:38:56,029 - INFO - [PRICE] SBIN: Rs.800.10
+2025-08-05 09:39:06,120 - WARNING - Historical data failed for SBIN: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 09:39:06,341 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 09:39:06,341 - INFO - [FALLBACK] Using cached training data for SBIN
+2025-08-05 09:39:23,442 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 09:39:23,444 - INFO - === TRADING CYCLE END ===
+2025-08-05 09:39:45,336 - INFO - Enhanced ML Swing Trading Bot stopped
+2025-08-05 09:40:23,988 - INFO - Enhanced ML Swing Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 09:40:23,988 - INFO - 🧠 Initializing ML models...
+2025-08-05 09:40:24,156 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 09:40:24,211 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 09:40:24,211 - INFO - 📁 Using cached training data
+2025-08-05 09:40:24,211 - INFO - 📈 Training data summary:
+2025-08-05 09:40:24,211 - INFO -    Symbols: 6
+2025-08-05 09:40:24,211 - INFO -    Total data points: 2,190
+2025-08-05 09:40:24,219 - INFO -    Average days per symbol: 365
+2025-08-05 09:40:24,219 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 09:40:24,219 - INFO - Training ML models...
+2025-08-05 09:40:54,438 - INFO - LSTM model trained successfully
+2025-08-05 09:40:55,029 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 09:41:22,456 - INFO - LSTM model trained successfully
+2025-08-05 09:41:22,993 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 09:41:49,880 - INFO - LSTM model trained successfully
+2025-08-05 09:41:50,359 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 09:42:17,227 - INFO - LSTM model trained successfully
+2025-08-05 09:42:17,710 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 09:42:44,990 - INFO - LSTM model trained successfully
+2025-08-05 09:42:45,551 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 09:43:12,987 - INFO - LSTM model trained successfully
+2025-08-05 09:43:13,485 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 09:43:13,485 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 09:43:13,485 - INFO - 💾 Saving trained models...
+2025-08-05 09:43:13,487 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 09:43:13,634 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 09:43:13,634 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 09:43:13,634 - INFO -    ✓ LSTM price prediction
+2025-08-05 09:43:13,634 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 09:43:13,634 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 09:43:13,634 - INFO -    ✓ News sentiment analysis
+2025-08-05 09:43:13,634 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 09:43:13,634 - INFO - Enhanced ML Swing Trading Bot started
+2025-08-05 09:43:13,638 - INFO - === TRADING CYCLE START ===
+2025-08-05 09:43:38,967 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 09:43:38,968 - INFO - === TRADING CYCLE END ===
+2025-08-05 09:53:38,969 - INFO - === TRADING CYCLE START ===
+2025-08-05 09:53:55,761 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 09:53:55,763 - INFO - === TRADING CYCLE END ===
+2025-08-05 09:55:27,965 - INFO - Enhanced ML Swing Trading Bot stopped
+2025-08-05 10:06:34,675 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 10:06:34,676 - INFO - 🧠 Initializing ML models...
+2025-08-05 10:06:34,823 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 10:06:34,869 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 10:06:34,869 - INFO - 📁 Using cached training data
+2025-08-05 10:06:34,870 - INFO - 📈 Training data summary:
+2025-08-05 10:06:34,870 - INFO -    Symbols: 6
+2025-08-05 10:06:34,871 - INFO -    Total data points: 2,190
+2025-08-05 10:06:34,871 - INFO -    Average days per symbol: 365
+2025-08-05 10:06:34,871 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 10:06:34,871 - INFO - Training ML models...
+2025-08-05 10:06:58,819 - INFO - LSTM model trained successfully
+2025-08-05 10:06:59,157 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 10:07:24,100 - INFO - LSTM model trained successfully
+2025-08-05 10:07:24,439 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 10:07:48,203 - INFO - LSTM model trained successfully
+2025-08-05 10:07:48,549 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 10:08:12,825 - INFO - LSTM model trained successfully
+2025-08-05 10:08:13,181 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 10:08:39,165 - INFO - LSTM model trained successfully
+2025-08-05 10:08:39,496 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 10:09:05,032 - INFO - LSTM model trained successfully
+2025-08-05 10:09:05,362 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 10:09:05,363 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 10:09:05,363 - INFO - 💾 Saving trained models...
+2025-08-05 10:09:05,364 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 10:09:05,523 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 10:09:05,523 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 10:09:05,523 - INFO -    ✓ LSTM price prediction
+2025-08-05 10:09:05,524 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 10:09:05,524 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 10:09:05,525 - INFO -    ✓ News sentiment analysis
+2025-08-05 10:09:05,525 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 10:09:05,527 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 10:09:05,528 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:09:26,346 - INFO - [PRICE] LT: Rs.3619.40
+2025-08-05 10:09:28,269 - ERROR - Historical data failed for LT: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 10:09:28,272 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 10:09:28,273 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:11:28,274 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:11:47,155 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 10:11:47,155 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:13:47,157 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:14:08,117 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 10:14:08,117 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:16:08,119 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:16:08,274 - INFO - [PRICE] SBIN: Rs.798.70
+2025-08-05 10:16:10,175 - ERROR - Historical data failed for SBIN: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 10:16:10,411 - INFO - [PRICE] TCS: Rs.3050.00
+2025-08-05 10:16:12,134 - ERROR - Historical data failed for TCS: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 10:16:16,674 - INFO - [PRICE] ITC: Rs.413.90
+2025-08-05 10:16:19,286 - ERROR - Historical data failed for ITC: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 10:16:19,399 - INFO - [PRICE] RELIANCE: Rs.1397.60
+2025-08-05 10:16:20,846 - ERROR - Historical data failed for RELIANCE: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 10:16:28,957 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 10:16:28,958 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:18:28,959 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:18:36,822 - INFO - [PRICE] ITC: Rs.413.90
+2025-08-05 10:18:39,290 - ERROR - Historical data failed for ITC: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 10:18:48,662 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 10:18:48,664 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:20:48,665 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:20:48,781 - INFO - [PRICE] SBIN: Rs.799.05
+2025-08-05 10:20:51,130 - ERROR - Historical data failed for SBIN: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 10:20:51,238 - INFO - [PRICE] TCS: Rs.3052.50
+2025-08-05 10:20:52,777 - ERROR - Historical data failed for TCS: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 10:20:52,944 - INFO - [PRICE] HDFCBANK: Rs.1981.50
+2025-08-05 10:20:55,146 - ERROR - Historical data failed for HDFCBANK: Too Many Requests. Rate limited. Try after a while.
+2025-08-05 10:21:13,170 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 10:21:13,171 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:21:58,251 - INFO - Enhanced Intraday ML Trading Bot stopped
+2025-08-05 10:22:08,573 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 10:22:08,573 - INFO - 🧠 Initializing ML models...
+2025-08-05 10:22:08,698 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 10:23:00,224 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 10:23:00,224 - INFO - 🧠 Initializing ML models...
+2025-08-05 10:23:00,332 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 10:23:00,371 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 10:23:00,371 - INFO - 📁 Using cached training data
+2025-08-05 10:23:00,371 - INFO - 📈 Training data summary:
+2025-08-05 10:23:00,372 - INFO -    Symbols: 6
+2025-08-05 10:23:00,372 - INFO -    Total data points: 2,190
+2025-08-05 10:23:00,372 - INFO -    Average days per symbol: 365
+2025-08-05 10:23:00,372 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 10:23:00,373 - INFO - Training ML models...
+2025-08-05 10:23:23,047 - INFO - LSTM model trained successfully
+2025-08-05 10:23:23,427 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 10:23:46,498 - INFO - LSTM model trained successfully
+2025-08-05 10:23:46,845 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 10:24:11,201 - INFO - LSTM model trained successfully
+2025-08-05 10:24:11,544 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 10:24:38,474 - INFO - LSTM model trained successfully
+2025-08-05 10:24:38,969 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 10:25:05,906 - INFO - LSTM model trained successfully
+2025-08-05 10:25:06,256 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 10:25:33,922 - INFO - LSTM model trained successfully
+2025-08-05 10:25:34,305 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 10:25:34,305 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 10:25:34,306 - INFO - 💾 Saving trained models...
+2025-08-05 10:25:34,307 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 10:25:34,470 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 10:25:34,470 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 10:25:34,471 - INFO -    ✓ LSTM price prediction
+2025-08-05 10:25:34,471 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 10:25:34,471 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 10:25:34,471 - INFO -    ✓ News sentiment analysis
+2025-08-05 10:25:34,471 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 10:25:34,473 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 10:25:34,474 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:25:34,474 - ERROR - Error scanning SBIN: 'RealMarketDataProvider' object has no attribute 'get_current_price'
+2025-08-05 10:25:34,475 - ERROR - Error scanning TCS: 'RealMarketDataProvider' object has no attribute 'get_current_price'
+2025-08-05 10:25:34,476 - ERROR - Error scanning HDFCBANK: 'RealMarketDataProvider' object has no attribute 'get_current_price'
+2025-08-05 10:25:34,476 - ERROR - Error scanning INFY: 'RealMarketDataProvider' object has no attribute 'get_current_price'
+2025-08-05 10:25:34,476 - ERROR - Error scanning ITC: 'RealMarketDataProvider' object has no attribute 'get_current_price'
+2025-08-05 10:25:34,477 - ERROR - Error scanning RELIANCE: 'RealMarketDataProvider' object has no attribute 'get_current_price'
+2025-08-05 10:25:34,478 - ERROR - Error scanning ICICIBANK: 'RealMarketDataProvider' object has no attribute 'get_current_price'
+2025-08-05 10:25:34,478 - ERROR - Error scanning AXISBANK: 'RealMarketDataProvider' object has no attribute 'get_current_price'
+2025-08-05 10:25:34,479 - ERROR - Error scanning KOTAKBANK: 'RealMarketDataProvider' object has no attribute 'get_current_price'
+2025-08-05 10:25:34,479 - ERROR - Error scanning LT: 'RealMarketDataProvider' object has no attribute 'get_current_price'
+2025-08-05 10:25:34,479 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 10:25:34,480 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:25:54,088 - INFO - Enhanced Intraday ML Trading Bot stopped
+2025-08-05 10:26:14,029 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 10:26:14,031 - INFO - 🧠 Initializing ML models...
+2025-08-05 10:26:14,147 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 10:26:14,181 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 10:26:14,181 - INFO - 📁 Using cached training data
+2025-08-05 10:26:14,181 - INFO - 📈 Training data summary:
+2025-08-05 10:26:14,181 - INFO -    Symbols: 6
+2025-08-05 10:26:14,181 - INFO -    Total data points: 2,190
+2025-08-05 10:26:14,181 - INFO -    Average days per symbol: 365
+2025-08-05 10:26:14,181 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 10:26:14,181 - INFO - Training ML models...
+2025-08-05 10:26:29,613 - INFO - LSTM model trained successfully
+2025-08-05 10:26:30,008 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 10:26:55,485 - INFO - LSTM model trained successfully
+2025-08-05 10:26:55,929 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 10:27:22,826 - INFO - LSTM model trained successfully
+2025-08-05 10:27:23,287 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 10:27:51,884 - INFO - LSTM model trained successfully
+2025-08-05 10:27:52,476 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 10:28:22,517 - INFO - LSTM model trained successfully
+2025-08-05 10:28:22,961 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 10:28:53,804 - INFO - LSTM model trained successfully
+2025-08-05 10:28:54,212 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 10:28:54,213 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 10:28:54,214 - INFO - 💾 Saving trained models...
+2025-08-05 10:28:54,214 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 10:28:54,390 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 10:28:54,392 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 10:28:54,392 - INFO -    ✓ LSTM price prediction
+2025-08-05 10:28:54,392 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 10:28:54,392 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 10:28:54,393 - INFO -    ✓ News sentiment analysis
+2025-08-05 10:28:54,393 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 10:28:54,395 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 10:28:54,396 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:28:55,630 - INFO - [LIVE] SBIN: Rs.799.70
+2025-08-05 10:28:57,758 - INFO - [HIST] SBIN: 90 days
+2025-08-05 10:28:58,446 - INFO - [OPPORTUNITY] BUY SBIN @ Rs.799.70 (Qty: 17, SL: Rs.712.29, Target: Rs.930.85)
+2025-08-05 10:28:58,447 - INFO - Strategy: Multi-Strategy: RSI_OVERSOLD, Strength: 0.80
+2025-08-05 10:28:58,448 - INFO - ML Components - Tech: 0.00, LSTM: 1.00, Classifier: 0.00, Sentiment: 0.00
+2025-08-05 10:28:58,801 - INFO - [LIVE] TCS: Rs.3052.30
+2025-08-05 10:29:01,600 - INFO - [HIST] TCS: 90 days
+2025-08-05 10:29:02,037 - INFO - [OPPORTUNITY] BUY TCS @ Rs.3052.30 (Qty: 4, SL: Rs.2701.95, Target: Rs.3552.88)
+2025-08-05 10:29:02,037 - INFO - Strategy: Multi-Strategy: RSI_OVERSOLD, Strength: 0.80
+2025-08-05 10:29:02,038 - INFO - ML Components - Tech: 0.00, LSTM: -1.00, Classifier: 0.00, Sentiment: 0.00
+2025-08-05 10:29:02,407 - INFO - [LIVE] HDFCBANK: Rs.1979.50
+2025-08-05 10:29:05,230 - INFO - [HIST] HDFCBANK: 90 days
+2025-08-05 10:29:06,003 - INFO - [LIVE] INFY: Rs.1460.60
+2025-08-05 10:29:08,949 - INFO - [HIST] INFY: 89 days
+2025-08-05 10:29:10,285 - INFO - [LIVE] ITC: Rs.414.00
+2025-08-05 10:29:12,910 - INFO - [HIST] ITC: 89 days
+2025-08-05 10:29:13,901 - INFO - [LIVE] RELIANCE: Rs.1398.90
+2025-08-05 10:29:16,469 - INFO - [HIST] RELIANCE: 90 days
+2025-08-05 10:29:17,329 - INFO - [LIVE] ICICIBANK: Rs.1451.50
+2025-08-05 10:29:20,155 - INFO - [HIST] ICICIBANK: 90 days
+2025-08-05 10:29:21,223 - INFO - [LIVE] AXISBANK: Rs.1077.40
+2025-08-05 10:29:23,725 - INFO - [HIST] AXISBANK: 89 days
+2025-08-05 10:29:24,170 - INFO - [OPPORTUNITY] BUY AXISBANK @ Rs.1077.40 (Qty: 12, SL: Rs.930.35, Target: Rs.1254.09)
+2025-08-05 10:29:24,171 - INFO - Strategy: Multi-Strategy: RSI_OVERSOLD, Strength: 0.80
+2025-08-05 10:29:24,171 - INFO - ML Components - Tech: 0.00, LSTM: 1.00, Classifier: 0.00, Sentiment: 0.00
+2025-08-05 10:29:24,624 - INFO - [LIVE] KOTAKBANK: Rs.2001.90
+2025-08-05 10:29:27,384 - INFO - [HIST] KOTAKBANK: 90 days
+2025-08-05 10:29:28,131 - INFO - [LIVE] LT: Rs.3617.50
+2025-08-05 10:29:30,955 - INFO - [HIST] LT: 89 days
+2025-08-05 10:29:31,312 - INFO - [EXECUTED] BUY 17 SBIN @ Rs.799.70 (Charges: Rs.60.58, Net: Rs.13655.48)
+2025-08-05 10:29:31,312 - INFO - [PROFIT HUNT] Executed trade 1/5
+2025-08-05 10:29:31,825 - INFO - [EXECUTED] BUY 4 TCS @ Rs.3052.30 (Charges: Rs.54.40, Net: Rs.12263.60)
+2025-08-05 10:29:31,826 - INFO - [PROFIT HUNT] Executed trade 2/5
+2025-08-05 10:29:32,338 - INFO - [EXECUTED] BUY 12 AXISBANK @ Rs.1077.40 (Charges: Rs.57.61, Net: Rs.12986.41)
+2025-08-05 10:29:32,339 - INFO - [PROFIT HUNT] Executed trade 3/5
+2025-08-05 10:29:32,841 - INFO - Portfolio: Cash: Rs.11094.51, Invested: Rs.38732.90, P&L: Rs.0.00
+2025-08-05 10:29:32,842 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:39:32,843 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:39:33,379 - INFO - [LIVE] SBIN: Rs.801.60
+2025-08-05 10:39:33,380 - INFO - [POSITION] SBIN: Rs.799.70 -> Rs.801.60 (P&L: Rs.32.30)
+2025-08-05 10:39:33,593 - INFO - [LIVE] TCS: Rs.3047.40
+2025-08-05 10:39:33,593 - INFO - [POSITION] TCS: Rs.3052.30 -> Rs.3047.40 (P&L: Rs.-19.60)
+2025-08-05 10:39:33,917 - INFO - [LIVE] AXISBANK: Rs.1077.30
+2025-08-05 10:39:33,917 - INFO - [POSITION] AXISBANK: Rs.1077.40 -> Rs.1077.30 (P&L: Rs.-1.20)
+2025-08-05 10:39:34,256 - INFO - [LIVE] HDFCBANK: Rs.1978.80
+2025-08-05 10:39:35,207 - INFO - [LIVE] INFY: Rs.1455.40
+2025-08-05 10:39:36,084 - INFO - [LIVE] ITC: Rs.413.70
+2025-08-05 10:39:36,713 - INFO - [LIVE] RELIANCE: Rs.1398.60
+2025-08-05 10:39:37,493 - INFO - [LIVE] ICICIBANK: Rs.1449.30
+2025-08-05 10:39:38,281 - INFO - [LIVE] KOTAKBANK: Rs.2001.60
+2025-08-05 10:39:39,073 - INFO - [LIVE] LT: Rs.3619.50
+2025-08-05 10:39:39,430 - INFO - Portfolio: Cash: Rs.11094.51, Invested: Rs.38732.90, P&L: Rs.11.50
+2025-08-05 10:39:39,430 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:40:56,899 - INFO - [CLOSED] SBIN @ Rs.801.60 - Bot Stopped (P&L: Rs.-41.64, Charges: Rs.73.94)
+2025-08-05 10:40:56,916 - INFO - [CLOSED] TCS @ Rs.3047.40 - Bot Stopped (P&L: Rs.-85.74, Charges: Rs.66.14)
+2025-08-05 10:40:56,938 - INFO - [CLOSED] AXISBANK @ Rs.1077.30 - Bot Stopped (P&L: Rs.-71.35, Charges: Rs.70.15)
+2025-08-05 10:40:56,939 - INFO - Enhanced Intraday ML Trading Bot stopped
+2025-08-05 10:44:30,110 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 10:44:30,111 - INFO - 🧠 Initializing ML models...
+2025-08-05 10:44:30,238 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 10:44:30,278 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 10:44:30,278 - INFO - 📁 Using cached training data
+2025-08-05 10:44:30,279 - INFO - 📈 Training data summary:
+2025-08-05 10:44:30,279 - INFO -    Symbols: 6
+2025-08-05 10:44:30,279 - INFO -    Total data points: 2,190
+2025-08-05 10:44:30,279 - INFO -    Average days per symbol: 365
+2025-08-05 10:44:30,279 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 10:44:30,280 - INFO - Training ML models...
+2025-08-05 10:44:55,261 - INFO - LSTM model trained successfully
+2025-08-05 10:44:55,611 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 10:45:23,138 - INFO - LSTM model trained successfully
+2025-08-05 10:45:23,587 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 10:45:52,827 - INFO - LSTM model trained successfully
+2025-08-05 10:45:53,201 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 10:46:19,183 - INFO - LSTM model trained successfully
+2025-08-05 10:46:19,591 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 10:46:44,844 - INFO - LSTM model trained successfully
+2025-08-05 10:46:45,236 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 10:47:12,964 - INFO - LSTM model trained successfully
+2025-08-05 10:47:13,358 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 10:47:13,359 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 10:47:13,359 - INFO - 💾 Saving trained models...
+2025-08-05 10:47:13,360 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 10:47:13,530 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 10:47:13,530 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 10:47:13,531 - INFO -    ✓ LSTM price prediction
+2025-08-05 10:47:13,531 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 10:47:13,532 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 10:47:13,532 - INFO -    ✓ News sentiment analysis
+2025-08-05 10:47:13,532 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 10:47:13,534 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 10:47:13,535 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:47:52,547 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 10:47:52,548 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:50:52,550 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:51:30,912 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 10:51:30,913 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:54:30,915 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:55:13,824 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 10:55:13,825 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:58:13,827 - INFO - === TRADING CYCLE START ===
+2025-08-05 10:58:47,511 - ERROR - $LT.NS: possibly delisted; no price data found  (period=1d)
+2025-08-05 10:58:47,513 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 10:58:47,513 - INFO - === TRADING CYCLE END ===
+2025-08-05 10:59:31,737 - INFO - Enhanced Intraday ML Trading Bot stopped
+2025-08-05 11:00:29,608 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 11:00:29,608 - INFO - 🧠 Initializing ML models...
+2025-08-05 11:00:29,727 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 11:00:29,763 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 11:00:29,764 - INFO - 📁 Using cached training data
+2025-08-05 11:00:29,764 - INFO - 📈 Training data summary:
+2025-08-05 11:00:29,765 - INFO -    Symbols: 6
+2025-08-05 11:00:29,765 - INFO -    Total data points: 2,190
+2025-08-05 11:00:29,765 - INFO -    Average days per symbol: 365
+2025-08-05 11:00:29,765 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 11:00:29,765 - INFO - Training ML models...
+2025-08-05 11:00:53,606 - INFO - LSTM model trained successfully
+2025-08-05 11:00:53,951 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 11:01:18,992 - INFO - LSTM model trained successfully
+2025-08-05 11:01:19,344 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 11:01:45,168 - INFO - LSTM model trained successfully
+2025-08-05 11:01:45,536 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 11:02:12,194 - INFO - LSTM model trained successfully
+2025-08-05 11:02:12,560 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 11:02:36,467 - INFO - LSTM model trained successfully
+2025-08-05 11:02:36,797 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 11:03:02,206 - INFO - LSTM model trained successfully
+2025-08-05 11:03:02,569 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 11:03:02,570 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 11:03:02,570 - INFO - 💾 Saving trained models...
+2025-08-05 11:03:02,571 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 11:03:02,746 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 11:03:02,746 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 11:03:02,746 - INFO -    ✓ LSTM price prediction
+2025-08-05 11:03:02,747 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 11:03:02,747 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 11:03:02,747 - INFO -    ✓ News sentiment analysis
+2025-08-05 11:03:02,748 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 11:03:02,750 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 11:03:02,751 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:03:02,751 - INFO - Market Status: OPEN
+2025-08-05 11:03:02,751 - INFO - Scanning for trading opportunities...
+2025-08-05 11:03:44,740 - INFO - Found 0 trading opportunities
+2025-08-05 11:03:44,741 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:03:44,742 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:06:44,743 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:06:44,744 - INFO - Market Status: OPEN
+2025-08-05 11:06:44,745 - INFO - Scanning for trading opportunities...
+2025-08-05 11:07:26,415 - INFO - Found 0 trading opportunities
+2025-08-05 11:07:26,415 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:07:26,415 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:10:26,428 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:10:26,430 - INFO - Market Status: OPEN
+2025-08-05 11:10:26,431 - INFO - Scanning for trading opportunities...
+2025-08-05 11:11:08,638 - INFO - Found 0 trading opportunities
+2025-08-05 11:11:08,639 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:11:08,639 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:14:08,647 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:14:08,652 - INFO - Market Status: OPEN
+2025-08-05 11:14:08,653 - INFO - Scanning for trading opportunities...
+2025-08-05 11:14:45,171 - INFO - Found 0 trading opportunities
+2025-08-05 11:14:45,174 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:14:45,175 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:17:45,177 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:17:45,177 - INFO - Market Status: OPEN
+2025-08-05 11:17:45,179 - INFO - Scanning for trading opportunities...
+2025-08-05 11:18:25,602 - INFO - Found 0 trading opportunities
+2025-08-05 11:18:25,604 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:18:25,605 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:21:25,606 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:21:25,608 - INFO - Market Status: OPEN
+2025-08-05 11:21:25,609 - INFO - Scanning for trading opportunities...
+2025-08-05 11:22:05,122 - INFO - Found 0 trading opportunities
+2025-08-05 11:22:05,122 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:22:05,123 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:25:05,123 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:25:05,124 - INFO - Market Status: OPEN
+2025-08-05 11:25:05,124 - INFO - Scanning for trading opportunities...
+2025-08-05 11:25:55,450 - INFO - Found 0 trading opportunities
+2025-08-05 11:25:55,451 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:25:55,452 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:28:55,453 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:28:55,453 - INFO - Market Status: OPEN
+2025-08-05 11:28:55,453 - INFO - Scanning for trading opportunities...
+2025-08-05 11:29:46,362 - INFO - Found 0 trading opportunities
+2025-08-05 11:29:46,364 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:29:46,364 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:32:46,368 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:32:46,372 - INFO - Market Status: OPEN
+2025-08-05 11:32:46,372 - INFO - Scanning for trading opportunities...
+2025-08-05 11:33:30,369 - INFO - Found 0 trading opportunities
+2025-08-05 11:33:30,375 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:33:30,375 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:36:30,376 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:36:30,376 - INFO - Market Status: OPEN
+2025-08-05 11:36:30,378 - INFO - Scanning for trading opportunities...
+2025-08-05 11:37:34,078 - INFO - Found 0 trading opportunities
+2025-08-05 11:37:34,083 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:37:34,083 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:40:34,086 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:40:34,086 - INFO - Market Status: OPEN
+2025-08-05 11:40:34,086 - INFO - Scanning for trading opportunities...
+2025-08-05 11:41:19,876 - INFO - Found 0 trading opportunities
+2025-08-05 11:41:19,878 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:41:19,878 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:44:19,883 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:44:19,883 - INFO - Market Status: OPEN
+2025-08-05 11:44:19,883 - INFO - Scanning for trading opportunities...
+2025-08-05 11:45:03,187 - INFO - Found 0 trading opportunities
+2025-08-05 11:45:03,189 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:45:03,189 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:48:03,190 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:48:03,190 - INFO - Market Status: OPEN
+2025-08-05 11:48:03,190 - INFO - Scanning for trading opportunities...
+2025-08-05 11:48:47,306 - INFO - Found 0 trading opportunities
+2025-08-05 11:48:47,307 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:48:47,307 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:51:47,308 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:51:47,308 - INFO - Market Status: OPEN
+2025-08-05 11:51:47,308 - INFO - Scanning for trading opportunities...
+2025-08-05 11:52:32,311 - INFO - Found 0 trading opportunities
+2025-08-05 11:52:32,311 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:52:32,311 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:55:32,315 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:55:32,315 - INFO - Market Status: OPEN
+2025-08-05 11:55:32,315 - INFO - Scanning for trading opportunities...
+2025-08-05 11:56:14,479 - INFO - Found 0 trading opportunities
+2025-08-05 11:56:14,479 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 11:56:14,479 - INFO - === TRADING CYCLE END ===
+2025-08-05 11:59:14,483 - INFO - === TRADING CYCLE START ===
+2025-08-05 11:59:14,483 - INFO - Market Status: OPEN
+2025-08-05 11:59:14,483 - INFO - Scanning for trading opportunities...
+2025-08-05 12:00:00,521 - INFO - Found 0 trading opportunities
+2025-08-05 12:00:00,521 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 12:00:00,521 - INFO - === TRADING CYCLE END ===
+2025-08-05 12:03:00,523 - INFO - === TRADING CYCLE START ===
+2025-08-05 12:03:00,532 - INFO - Market Status: OPEN
+2025-08-05 12:03:00,532 - INFO - Scanning for trading opportunities...
+2025-08-05 12:03:57,880 - INFO - Found 0 trading opportunities
+2025-08-05 12:03:57,885 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 12:03:57,886 - INFO - === TRADING CYCLE END ===
+2025-08-05 12:06:57,891 - INFO - === TRADING CYCLE START ===
+2025-08-05 12:06:57,895 - INFO - Market Status: OPEN
+2025-08-05 12:06:57,895 - INFO - Scanning for trading opportunities...
+2025-08-05 12:07:41,367 - INFO - Found 0 trading opportunities
+2025-08-05 12:07:41,367 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 12:07:41,367 - INFO - === TRADING CYCLE END ===
+2025-08-05 12:10:41,371 - INFO - === TRADING CYCLE START ===
+2025-08-05 12:10:41,371 - INFO - Market Status: OPEN
+2025-08-05 12:10:41,371 - INFO - Scanning for trading opportunities...
+2025-08-05 12:11:31,093 - INFO - Found 0 trading opportunities
+2025-08-05 12:11:31,094 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 12:11:31,095 - INFO - === TRADING CYCLE END ===
+2025-08-05 12:12:05,447 - INFO - Enhanced Intraday ML Trading Bot stopped
+2025-08-05 12:20:43,790 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 12:20:43,790 - INFO - 🧠 Initializing ML models...
+2025-08-05 12:20:44,033 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 12:24:17,010 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 12:24:17,010 - INFO - 🧠 Initializing ML models...
+2025-08-05 12:24:17,205 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 12:24:17,411 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 12:24:17,411 - INFO - 📁 Using cached training data
+2025-08-05 12:24:17,411 - INFO - 📈 Training data summary:
+2025-08-05 12:24:17,411 - INFO -    Symbols: 6
+2025-08-05 12:24:17,411 - INFO -    Total data points: 2,190
+2025-08-05 12:24:17,411 - INFO -    Average days per symbol: 365
+2025-08-05 12:24:17,411 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 12:24:17,411 - INFO - Training ML models...
+2025-08-05 12:24:45,237 - INFO - LSTM model trained successfully
+2025-08-05 12:24:45,851 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 12:25:13,582 - INFO - LSTM model trained successfully
+2025-08-05 12:25:14,124 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 12:25:43,267 - INFO - LSTM model trained successfully
+2025-08-05 12:25:43,794 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 12:26:15,062 - INFO - LSTM model trained successfully
+2025-08-05 12:26:15,583 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 12:26:45,773 - INFO - LSTM model trained successfully
+2025-08-05 12:26:46,384 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 12:27:15,834 - INFO - LSTM model trained successfully
+2025-08-05 12:27:16,358 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 12:27:16,360 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 12:27:16,360 - INFO - 💾 Saving trained models...
+2025-08-05 12:27:16,361 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 12:27:16,516 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 12:27:16,516 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 12:27:16,516 - INFO -    ✓ LSTM price prediction
+2025-08-05 12:27:16,516 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 12:27:16,516 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 12:27:16,516 - INFO -    ✓ News sentiment analysis
+2025-08-05 12:27:16,516 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 12:27:16,520 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 12:27:16,520 - INFO - === TRADING CYCLE START ===
+2025-08-05 12:27:16,520 - INFO - Market Status: OPEN
+2025-08-05 12:27:16,520 - INFO - Scanning for trading opportunities...
+2025-08-05 12:27:19,955 - WARNING - No price data for SBIN
+2025-08-05 12:27:21,999 - WARNING - No price data for TCS
+2025-08-05 12:27:24,660 - WARNING - No price data for HDFCBANK
+2025-08-05 12:27:29,496 - WARNING - No price data for INFY
+2025-08-05 12:27:34,188 - WARNING - No price data for ITC
+2025-08-05 12:27:37,908 - WARNING - No price data for RELIANCE
+2025-08-05 12:27:41,048 - WARNING - No price data for ICICIBANK
+2025-08-05 12:27:46,038 - WARNING - No price data for AXISBANK
+2025-08-05 12:27:49,380 - WARNING - No price data for KOTAKBANK
+2025-08-05 12:27:50,839 - WARNING - No price data for LT
+2025-08-05 12:27:50,839 - INFO - Found 0 trading opportunities
+2025-08-05 12:27:50,839 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 12:27:50,839 - INFO - === TRADING CYCLE END ===
+2025-08-05 12:28:19,696 - INFO - Enhanced Intraday ML Trading Bot stopped
+2025-08-05 12:29:50,123 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 12:29:50,123 - INFO - 🧠 Initializing ML models...
+2025-08-05 12:29:50,307 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 12:29:50,371 - INFO - Loaded cached training data for 6 symbols
+2025-08-05 12:29:50,371 - INFO - 📁 Using cached training data
+2025-08-05 12:29:50,371 - INFO - 📈 Training data summary:
+2025-08-05 12:29:50,371 - INFO -    Symbols: 6
+2025-08-05 12:29:50,371 - INFO -    Total data points: 2,190
+2025-08-05 12:29:50,371 - INFO -    Average days per symbol: 365
+2025-08-05 12:29:50,371 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 12:29:50,371 - INFO - Training ML models...
+2025-08-05 12:35:59,281 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 12:35:59,286 - INFO - 🧠 Initializing ML models...
+2025-08-05 12:35:59,532 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 12:35:59,653 - INFO - 📁 Using cached training data
+2025-08-05 12:35:59,653 - INFO - 📈 Training data summary:
+2025-08-05 12:35:59,653 - INFO -    Symbols: 6
+2025-08-05 12:35:59,653 - INFO -    Total data points: 2,190
+2025-08-05 12:35:59,653 - INFO -    Average days per symbol: 365
+2025-08-05 12:35:59,656 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 12:35:59,656 - INFO - Training ML models...
+2025-08-05 12:36:34,891 - INFO - LSTM model trained successfully
+2025-08-05 12:36:35,473 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 12:37:03,200 - INFO - LSTM model trained successfully
+2025-08-05 12:37:03,860 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 12:37:31,262 - INFO - LSTM model trained successfully
+2025-08-05 12:37:31,757 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 12:37:59,037 - INFO - LSTM model trained successfully
+2025-08-05 12:37:59,555 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 12:38:27,161 - INFO - LSTM model trained successfully
+2025-08-05 12:38:27,708 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 12:38:54,590 - INFO - LSTM model trained successfully
+2025-08-05 12:38:55,089 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 12:38:55,090 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 12:38:55,091 - INFO - 💾 Saving trained models...
+2025-08-05 12:38:55,092 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 12:38:55,248 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 12:38:55,248 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 12:38:55,248 - INFO -    ✓ LSTM price prediction
+2025-08-05 12:38:55,248 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 12:38:55,248 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 12:38:55,248 - INFO -    ✓ News sentiment analysis
+2025-08-05 12:38:55,248 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 12:38:55,251 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 12:38:55,252 - INFO - === TRADING CYCLE START ===
+2025-08-05 12:38:55,252 - INFO - Market Status: OPEN
+2025-08-05 12:38:55,252 - INFO - Scanning for trading opportunities...
+2025-08-05 12:38:56,273 - WARNING - No price data for SBIN
+2025-08-05 12:38:56,273 - WARNING - No price data for SBIN
+2025-08-05 12:38:57,095 - WARNING - No price data for TCS
+2025-08-05 12:38:57,096 - WARNING - No price data for TCS
+2025-08-05 12:38:57,860 - WARNING - No price data for HDFCBANK
+2025-08-05 12:38:57,860 - WARNING - No price data for HDFCBANK
+2025-08-05 12:38:58,736 - WARNING - No price data for INFY
+2025-08-05 12:38:58,736 - WARNING - No price data for INFY
+2025-08-05 12:38:59,686 - WARNING - No price data for ITC
+2025-08-05 12:38:59,687 - WARNING - No price data for ITC
+2025-08-05 12:39:00,287 - WARNING - No price data for RELIANCE
+2025-08-05 12:39:00,291 - WARNING - No price data for RELIANCE
+2025-08-05 12:39:00,830 - WARNING - No price data for ICICIBANK
+2025-08-05 12:39:00,830 - WARNING - No price data for ICICIBANK
+2025-08-05 12:39:01,490 - WARNING - No price data for AXISBANK
+2025-08-05 12:39:01,490 - WARNING - No price data for AXISBANK
+2025-08-05 12:39:02,101 - WARNING - No price data for KOTAKBANK
+2025-08-05 12:39:02,101 - WARNING - No price data for KOTAKBANK
+2025-08-05 12:39:02,594 - WARNING - No price data for LT
+2025-08-05 12:39:02,594 - WARNING - No price data for LT
+2025-08-05 12:39:02,594 - INFO - Found 0 trading opportunities
+2025-08-05 12:39:02,594 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 12:39:02,594 - INFO - === TRADING CYCLE END ===
+2025-08-05 12:39:08,447 - WARNING - No price data for SBIN
+2025-08-05 12:39:09,722 - WARNING - No price data for TCS
+2025-08-05 12:39:10,424 - WARNING - No price data for HDFCBANK
+2025-08-05 12:39:11,097 - WARNING - No price data for INFY
+2025-08-05 12:39:11,870 - WARNING - No price data for ITC
+2025-08-05 12:39:12,766 - WARNING - No price data for RELIANCE
+2025-08-05 12:39:23,678 - WARNING - No price data for SBIN
+2025-08-05 12:39:25,163 - WARNING - No price data for TCS
+2025-08-05 12:39:25,949 - WARNING - No price data for HDFCBANK
+2025-08-05 12:39:26,731 - WARNING - No price data for INFY
+2025-08-05 12:39:27,601 - WARNING - No price data for ITC
+2025-08-05 12:39:28,404 - WARNING - No price data for RELIANCE
+2025-08-05 12:39:39,242 - WARNING - No price data for SBIN
+2025-08-05 12:39:40,307 - WARNING - No price data for TCS
+2025-08-05 12:39:41,767 - WARNING - No price data for HDFCBANK
+2025-08-05 12:39:42,758 - WARNING - No price data for INFY
+2025-08-05 12:39:43,583 - WARNING - No price data for ITC
+2025-08-05 12:39:44,854 - WARNING - No price data for RELIANCE
+2025-08-05 12:39:55,643 - WARNING - No price data for SBIN
+2025-08-05 12:39:56,381 - WARNING - No price data for TCS
+2025-08-05 12:39:57,848 - WARNING - No price data for HDFCBANK
+2025-08-05 12:39:58,923 - WARNING - No price data for INFY
+2025-08-05 12:39:59,762 - WARNING - No price data for ITC
+2025-08-05 12:40:00,834 - WARNING - No price data for RELIANCE
+2025-08-05 12:40:11,697 - WARNING - No price data for SBIN
+2025-08-05 12:40:12,972 - WARNING - No price data for TCS
+2025-08-05 12:40:13,896 - WARNING - No price data for HDFCBANK
+2025-08-05 12:40:15,277 - WARNING - No price data for INFY
+2025-08-05 12:40:16,883 - WARNING - No price data for ITC
+2025-08-05 12:40:17,679 - WARNING - No price data for RELIANCE
+2025-08-05 12:40:28,668 - WARNING - No price data for SBIN
+2025-08-05 12:40:29,617 - WARNING - No price data for TCS
+2025-08-05 12:40:30,537 - WARNING - No price data for HDFCBANK
+2025-08-05 12:40:31,914 - WARNING - No price data for INFY
+2025-08-05 12:40:32,899 - WARNING - No price data for ITC
+2025-08-05 12:40:33,705 - WARNING - No price data for RELIANCE
+2025-08-05 12:40:44,573 - WARNING - No price data for SBIN
+2025-08-05 12:40:45,536 - WARNING - No price data for TCS
+2025-08-05 12:40:46,866 - WARNING - No price data for HDFCBANK
+2025-08-05 12:40:47,881 - WARNING - No price data for INFY
+2025-08-05 12:40:49,423 - WARNING - No price data for ITC
+2025-08-05 12:40:51,063 - WARNING - No price data for RELIANCE
+2025-08-05 12:41:01,823 - WARNING - No price data for SBIN
+2025-08-05 12:41:02,754 - WARNING - No price data for TCS
+2025-08-05 12:41:03,771 - WARNING - No price data for HDFCBANK
+2025-08-05 12:41:04,798 - WARNING - No price data for INFY
+2025-08-05 12:41:06,426 - WARNING - No price data for ITC
+2025-08-05 12:41:06,927 - INFO - Enhanced Intraday ML Trading Bot stopped
+2025-08-05 12:41:20,804 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 12:41:20,811 - INFO - 🧠 Initializing ML models...
+2025-08-05 12:41:20,971 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 12:41:21,024 - INFO - 📁 Using cached training data
+2025-08-05 12:41:21,024 - INFO - 📈 Training data summary:
+2025-08-05 12:41:21,024 - INFO -    Symbols: 6
+2025-08-05 12:41:21,033 - INFO -    Total data points: 2,190
+2025-08-05 12:41:21,033 - INFO -    Average days per symbol: 365
+2025-08-05 12:41:21,033 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 12:41:21,033 - INFO - Training ML models...
+2025-08-05 12:41:48,722 - INFO - LSTM model trained successfully
+2025-08-05 12:41:49,236 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 12:42:15,459 - INFO - LSTM model trained successfully
+2025-08-05 12:42:15,980 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 12:42:44,495 - INFO - LSTM model trained successfully
+2025-08-05 12:42:44,991 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 12:43:13,866 - INFO - LSTM model trained successfully
+2025-08-05 12:43:14,364 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 12:43:43,416 - INFO - LSTM model trained successfully
+2025-08-05 12:43:43,904 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 12:44:14,981 - INFO - LSTM model trained successfully
+2025-08-05 12:44:15,525 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 12:44:15,527 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 12:44:15,528 - INFO - 💾 Saving trained models...
+2025-08-05 12:44:15,528 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 12:44:15,687 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 12:44:15,687 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 12:44:15,688 - INFO -    ✓ LSTM price prediction
+2025-08-05 12:44:15,688 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 12:44:15,688 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 12:44:15,688 - INFO -    ✓ News sentiment analysis
+2025-08-05 12:44:15,688 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 12:44:15,690 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 12:44:15,690 - INFO - === TRADING CYCLE START ===
+2025-08-05 12:44:15,690 - INFO - Market Status: OPEN
+2025-08-05 12:44:15,692 - INFO - Scanning for trading opportunities...
+2025-08-05 12:44:23,124 - INFO - [SIM] SBIN: Rs.801.30
+2025-08-05 12:44:24,826 - WARNING - No historical data for SBIN
+2025-08-05 12:44:28,802 - INFO - [SIM] TCS: Rs.4130.30
+2025-08-05 12:44:32,441 - WARNING - No historical data for TCS
+2025-08-05 12:44:38,366 - INFO - [SIM] HDFCBANK: Rs.1660.13
+2025-08-05 12:44:41,441 - WARNING - No historical data for HDFCBANK
+2025-08-05 12:44:48,638 - INFO - [SIM] INFY: Rs.1829.87
+2025-08-05 12:44:48,656 - INFO - [SIM] ITC: Rs.460.74
+2025-08-05 12:44:50,217 - WARNING - No historical data for INFY
+2025-08-05 12:44:53,401 - INFO - [SIM] RELIANCE: Rs.2877.17
+2025-08-05 12:44:53,774 - INFO - Enhanced Intraday ML Trading Bot stopped
+2025-08-05 13:11:11,219 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 13:11:11,220 - INFO - 🧠 Initializing ML models...
+2025-08-05 13:11:11,493 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 13:11:11,567 - INFO - 📁 Using cached training data
+2025-08-05 13:11:11,573 - INFO - 📈 Training data summary:
+2025-08-05 13:11:11,573 - INFO -    Symbols: 6
+2025-08-05 13:11:11,573 - INFO -    Total data points: 2,190
+2025-08-05 13:11:11,573 - INFO -    Average days per symbol: 365
+2025-08-05 13:11:11,573 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 13:11:11,573 - INFO - Training ML models...
+2025-08-05 13:11:39,902 - INFO - LSTM model trained successfully
+2025-08-05 13:11:40,509 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 13:12:08,402 - INFO - LSTM model trained successfully
+2025-08-05 13:12:08,925 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 13:12:37,165 - INFO - LSTM model trained successfully
+2025-08-05 13:12:37,656 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 13:13:05,161 - INFO - LSTM model trained successfully
+2025-08-05 13:13:05,683 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 13:13:33,320 - INFO - LSTM model trained successfully
+2025-08-05 13:13:33,802 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 13:14:04,855 - INFO - LSTM model trained successfully
+2025-08-05 13:14:05,217 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 13:14:05,218 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 13:14:05,219 - INFO - 💾 Saving trained models...
+2025-08-05 13:14:05,220 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 13:14:05,391 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 13:14:05,393 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 13:14:05,393 - INFO -    ✓ LSTM price prediction
+2025-08-05 13:14:05,393 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 13:14:05,394 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 13:14:05,394 - INFO -    ✓ News sentiment analysis
+2025-08-05 13:14:05,394 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 13:14:05,396 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 13:14:05,397 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:14:05,397 - INFO - Market Status: OPEN
+2025-08-05 13:14:05,397 - INFO - Scanning for trading opportunities...
+2025-08-05 13:14:07,210 - INFO - [MONEYCONTROL] SBIN: Rs.800.90
+2025-08-05 13:14:07,226 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:14:07,902 - ERROR - Signal prediction failed: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- dividends
+- stock splits
+
+2025-08-05 13:14:09,517 - INFO - [MONEYCONTROL] TCS: Rs.3059.50
+2025-08-05 13:14:09,521 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:14:09,594 - ERROR - Signal prediction failed: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- dividends
+- stock splits
+
+2025-08-05 13:14:12,869 - INFO - [SCREENER] HDFCBANK: Rs.1521390.00
+2025-08-05 13:14:12,876 - INFO - [HIST] HDFCBANK: 90 days generated
+2025-08-05 13:14:13,005 - ERROR - Signal prediction failed: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- dividends
+- stock splits
+
+2025-08-05 13:14:14,009 - INFO - [MONEYCONTROL] INFY: Rs.1459.70
+2025-08-05 13:14:14,015 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:14:14,164 - ERROR - Signal prediction failed: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- dividends
+- stock splits
+
+2025-08-05 13:14:15,155 - INFO - [MONEYCONTROL] ITC: Rs.413.40
+2025-08-05 13:14:15,162 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:14:15,323 - ERROR - Signal prediction failed: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- dividends
+- stock splits
+
+2025-08-05 13:14:15,572 - INFO - [OPPORTUNITY] SELL ITC @ Rs.413.40 (Qty: 30, SL: Rs.479.52, Target: Rs.434.07)
+2025-08-05 13:14:15,573 - INFO - Strategy: Multi-Strategy: RSI_OVERBOUGHT, Strength: 0.80
+2025-08-05 13:14:15,574 - INFO - ML Components - Tech: 0.00, LSTM: 1.00, Classifier: 0.00, Sentiment: 0.00
+2025-08-05 13:14:16,362 - INFO - [MONEYCONTROL] RELIANCE: Rs.1394.00
+2025-08-05 13:14:16,370 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:14:16,536 - ERROR - Signal prediction failed: The feature names should match those that were passed during fit.
+Feature names seen at fit time, yet now missing:
+- dividends
+- stock splits
+
+2025-08-05 13:14:16,913 - INFO - [OPPORTUNITY] SELL RELIANCE @ Rs.1394.00 (Qty: 9, SL: Rs.1599.52, Target: Rs.1463.70)
+2025-08-05 13:14:16,913 - INFO - Strategy: Multi-Strategy: RSI_OVERBOUGHT, Strength: 0.80
+2025-08-05 13:14:16,914 - INFO - ML Components - Tech: 0.00, LSTM: 1.00, Classifier: 0.00, Sentiment: 0.00
+2025-08-05 13:14:20,106 - WARNING - No price data for ICICIBANK
+2025-08-05 13:14:23,213 - WARNING - No price data for AXISBANK
+2025-08-05 13:14:26,312 - WARNING - No price data for KOTAKBANK
+2025-08-05 13:14:29,407 - WARNING - No price data for LT
+2025-08-05 13:14:29,408 - INFO - Found 2 trading opportunities
+2025-08-05 13:14:29,434 - INFO - [EXECUTED] SELL 30 ITC @ Rs.413.40 (Charges: Rs.67.29, Net: Rs.12334.71)
+2025-08-05 13:14:29,435 - INFO - [PROFIT HUNT] Executed trade 0/5
+2025-08-05 13:14:29,949 - INFO - [EXECUTED] SELL 9 RELIANCE @ Rs.1394.00 (Charges: Rs.68.07, Net: Rs.12477.93)
+2025-08-05 13:14:29,950 - INFO - [PROFIT HUNT] Executed trade 0/5
+2025-08-05 13:14:30,452 - INFO - Portfolio: Cash: Rs.74812.63, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:14:30,452 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:16:09,222 - INFO - [MONEYCONTROL] SBIN: Rs.800.90
+2025-08-05 13:16:10,198 - INFO - Enhanced Intraday ML Trading Bot stopped
+2025-08-05 13:16:19,846 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 13:16:19,847 - INFO - 🧠 Initializing ML models...
+2025-08-05 13:16:19,970 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 13:16:20,014 - INFO - 📁 Using cached training data
+2025-08-05 13:16:20,014 - INFO - 📈 Training data summary:
+2025-08-05 13:16:20,015 - INFO -    Symbols: 6
+2025-08-05 13:16:20,015 - INFO -    Total data points: 2,190
+2025-08-05 13:16:20,015 - INFO -    Average days per symbol: 365
+2025-08-05 13:16:20,015 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 13:16:20,016 - INFO - Training ML models...
+2025-08-05 13:16:44,769 - INFO - LSTM model trained successfully
+2025-08-05 13:16:45,130 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 13:17:10,379 - INFO - LSTM model trained successfully
+2025-08-05 13:17:10,729 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 13:17:36,638 - INFO - LSTM model trained successfully
+2025-08-05 13:17:36,984 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 13:18:01,664 - INFO - LSTM model trained successfully
+2025-08-05 13:18:02,036 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 13:18:26,202 - INFO - LSTM model trained successfully
+2025-08-05 13:18:26,578 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 13:18:51,881 - INFO - LSTM model trained successfully
+2025-08-05 13:18:52,243 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 13:18:52,243 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 13:18:52,244 - INFO - 💾 Saving trained models...
+2025-08-05 13:18:52,244 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 13:18:52,410 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 13:18:52,410 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 13:18:52,411 - INFO -    ✓ LSTM price prediction
+2025-08-05 13:18:52,411 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 13:18:52,411 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 13:18:52,412 - INFO -    ✓ News sentiment analysis
+2025-08-05 13:18:52,412 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 13:18:52,413 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 13:18:52,414 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:18:52,415 - INFO - Market Status: OPEN
+2025-08-05 13:18:52,415 - INFO - Scanning for trading opportunities...
+2025-08-05 13:18:54,141 - INFO - [MONEYCONTROL] SBIN: Rs.800.90
+2025-08-05 13:18:54,145 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:18:55,680 - INFO - [MONEYCONTROL] TCS: Rs.3052.80
+2025-08-05 13:18:55,682 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:18:56,075 - INFO - [OPPORTUNITY] SELL TCS @ Rs.3052.80 (Qty: 3, SL: Rs.3610.34, Target: Rs.3205.44)
+2025-08-05 13:18:56,075 - INFO - Strategy: Multi-Strategy: RSI_OVERBOUGHT, Combined: gap_trading(0.80), reversal_patterns(0.80), Strength: 0.72
+2025-08-05 13:18:56,076 - INFO - ML Components - Tech: 0.00, LSTM: -1.00, Classifier: 0.00, Sentiment: 0.00
+2025-08-05 13:19:02,218 - WARNING - No price data for HDFCBANK
+2025-08-05 13:19:02,942 - INFO - [MONEYCONTROL] INFY: Rs.1459.70
+2025-08-05 13:19:02,949 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:19:04,319 - INFO - [MONEYCONTROL] ITC: Rs.413.40
+2025-08-05 13:19:04,324 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:19:05,746 - INFO - [MONEYCONTROL] RELIANCE: Rs.1394.00
+2025-08-05 13:19:05,750 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:19:09,377 - WARNING - No price data for ICICIBANK
+2025-08-05 13:19:12,502 - WARNING - No price data for AXISBANK
+2025-08-05 13:19:15,760 - WARNING - No price data for KOTAKBANK
+2025-08-05 13:19:19,002 - WARNING - No price data for LT
+2025-08-05 13:19:19,003 - INFO - Found 1 trading opportunities
+2025-08-05 13:19:19,024 - INFO - [EXECUTED] SELL 3 TCS @ Rs.3052.80 (Charges: Rs.49.69, Net: Rs.9108.71)
+2025-08-05 13:19:19,025 - INFO - [PROFIT HUNT] Executed trade 0/5
+2025-08-05 13:19:19,526 - INFO - Portfolio: Cash: Rs.59108.71, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:19:19,526 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:20:59,621 - INFO - [MONEYCONTROL] SBIN: Rs.800.90
+2025-08-05 13:21:00,856 - INFO - [MONEYCONTROL] TCS: Rs.3052.80
+2025-08-05 13:21:07,926 - INFO - [MONEYCONTROL] INFY: Rs.1459.70
+2025-08-05 13:21:08,739 - INFO - [MONEYCONTROL] ITC: Rs.413.40
+2025-08-05 13:21:09,476 - INFO - [MONEYCONTROL] RELIANCE: Rs.1394.00
+2025-08-05 13:22:19,528 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:22:19,529 - INFO - Market Status: OPEN
+2025-08-05 13:22:19,530 - INFO - Scanning for trading opportunities...
+2025-08-05 13:22:19,541 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:22:20,009 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:22:20,412 - INFO - [OPPORTUNITY] SELL TCS @ Rs.3052.80 (Qty: 3, SL: Rs.3610.34, Target: Rs.3205.44)
+2025-08-05 13:22:20,413 - INFO - Strategy: Multi-Strategy: RSI_OVERBOUGHT, Combined: gap_trading(0.80), reversal_patterns(0.80), Strength: 0.72
+2025-08-05 13:22:20,413 - INFO - ML Components - Tech: 0.00, LSTM: -1.00, Classifier: 0.00, Sentiment: 0.00
+2025-08-05 13:22:26,775 - WARNING - No price data for HDFCBANK
+2025-08-05 13:22:26,782 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:22:27,147 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:22:27,487 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:22:30,980 - WARNING - No price data for ICICIBANK
+2025-08-05 13:22:34,096 - WARNING - No price data for AXISBANK
+2025-08-05 13:22:37,216 - WARNING - No price data for KOTAKBANK
+2025-08-05 13:22:40,305 - WARNING - No price data for LT
+2025-08-05 13:22:40,306 - INFO - Found 1 trading opportunities
+2025-08-05 13:22:40,316 - INFO - [EXECUTED] SELL 3 TCS @ Rs.3052.80 (Charges: Rs.49.69, Net: Rs.9108.71)
+2025-08-05 13:22:40,316 - INFO - [PROFIT HUNT] Executed trade 0/5
+2025-08-05 13:22:40,818 - INFO - Portfolio: Cash: Rs.68217.41, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:22:40,818 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:23:16,181 - INFO - [MONEYCONTROL] SBIN: Rs.800.90
+2025-08-05 13:23:16,946 - INFO - [MONEYCONTROL] TCS: Rs.3052.80
+2025-08-05 13:23:24,333 - INFO - [MONEYCONTROL] INFY: Rs.1459.70
+2025-08-05 13:23:25,193 - INFO - [MONEYCONTROL] ITC: Rs.413.40
+2025-08-05 13:23:25,914 - INFO - [MONEYCONTROL] RELIANCE: Rs.1394.00
+2025-08-05 13:25:32,475 - INFO - [MONEYCONTROL] SBIN: Rs.800.90
+2025-08-05 13:25:33,267 - INFO - [MONEYCONTROL] TCS: Rs.3052.80
+2025-08-05 13:25:40,784 - INFO - [MONEYCONTROL] INFY: Rs.1459.70
+2025-08-05 13:25:40,821 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:25:40,823 - INFO - Market Status: OPEN
+2025-08-05 13:25:40,824 - INFO - Scanning for trading opportunities...
+2025-08-05 13:25:40,840 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:25:41,613 - INFO - [MONEYCONTROL] ITC: Rs.413.40
+2025-08-05 13:25:42,204 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:25:42,490 - INFO - [MONEYCONTROL] RELIANCE: Rs.1394.00
+2025-08-05 13:25:42,979 - INFO - [OPPORTUNITY] SELL TCS @ Rs.3052.80 (Qty: 3, SL: Rs.3610.34, Target: Rs.3205.44)
+2025-08-05 13:25:42,980 - INFO - Strategy: Multi-Strategy: RSI_OVERBOUGHT, Combined: gap_trading(0.80), reversal_patterns(0.80), Strength: 0.72
+2025-08-05 13:25:42,981 - INFO - ML Components - Tech: 0.00, LSTM: -1.00, Classifier: 0.00, Sentiment: 0.00
+2025-08-05 13:25:49,821 - WARNING - No price data for HDFCBANK
+2025-08-05 13:25:49,839 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:25:50,343 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:25:50,810 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:25:54,369 - WARNING - No price data for ICICIBANK
+2025-08-05 13:25:57,482 - WARNING - No price data for AXISBANK
+2025-08-05 13:26:00,596 - WARNING - No price data for KOTAKBANK
+2025-08-05 13:26:03,742 - WARNING - No price data for LT
+2025-08-05 13:26:03,742 - INFO - Found 1 trading opportunities
+2025-08-05 13:26:03,755 - INFO - [EXECUTED] SELL 3 TCS @ Rs.3052.80 (Charges: Rs.49.69, Net: Rs.9108.71)
+2025-08-05 13:26:03,756 - INFO - [PROFIT HUNT] Executed trade 0/5
+2025-08-05 13:26:04,257 - INFO - Portfolio: Cash: Rs.77326.12, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:26:04,257 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:27:49,337 - INFO - [MONEYCONTROL] SBIN: Rs.800.90
+2025-08-05 13:27:50,200 - INFO - [MONEYCONTROL] TCS: Rs.3052.80
+2025-08-05 13:27:57,381 - INFO - [MONEYCONTROL] INFY: Rs.1459.70
+2025-08-05 13:27:58,278 - INFO - [MONEYCONTROL] ITC: Rs.413.40
+2025-08-05 13:27:59,458 - INFO - [MONEYCONTROL] RELIANCE: Rs.1394.00
+2025-08-05 13:28:56,185 - INFO - Enhanced Intraday ML Trading Bot stopped
+2025-08-05 13:30:41,468 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 13:30:41,469 - INFO - 🧠 Initializing ML models...
+2025-08-05 13:30:41,633 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 13:30:41,691 - INFO - 📁 Using cached training data
+2025-08-05 13:30:41,692 - INFO - 📈 Training data summary:
+2025-08-05 13:30:41,692 - INFO -    Symbols: 6
+2025-08-05 13:30:41,692 - INFO -    Total data points: 2,190
+2025-08-05 13:30:41,692 - INFO -    Average days per symbol: 365
+2025-08-05 13:30:41,693 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 13:30:41,693 - INFO - Training ML models...
+2025-08-05 13:31:05,605 - INFO - LSTM model trained successfully
+2025-08-05 13:31:05,996 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.681
+2025-08-05 13:31:30,220 - INFO - LSTM model trained successfully
+2025-08-05 13:31:30,581 - INFO - Signal Classifier trained - RF: 0.725, XGB: 0.739
+2025-08-05 13:31:54,665 - INFO - LSTM model trained successfully
+2025-08-05 13:31:55,040 - INFO - Signal Classifier trained - RF: 0.681, XGB: 0.725
+2025-08-05 13:32:22,566 - INFO - LSTM model trained successfully
+2025-08-05 13:32:22,961 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.725
+2025-08-05 13:32:50,718 - INFO - LSTM model trained successfully
+2025-08-05 13:32:51,094 - INFO - Signal Classifier trained - RF: 0.768, XGB: 0.754
+2025-08-05 13:33:18,735 - INFO - LSTM model trained successfully
+2025-08-05 13:33:19,110 - INFO - Signal Classifier trained - RF: 0.739, XGB: 0.725
+2025-08-05 13:33:19,111 - INFO - ML models training completed. Success rate: 12/12
+2025-08-05 13:33:19,111 - INFO - 💾 Saving trained models...
+2025-08-05 13:33:19,112 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 13:33:19,291 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 13:33:19,292 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 13:33:19,292 - INFO -    ✓ LSTM price prediction
+2025-08-05 13:33:19,293 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 13:33:19,293 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 13:33:19,293 - INFO -    ✓ News sentiment analysis
+2025-08-05 13:33:19,294 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 13:33:19,296 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 13:33:19,297 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:33:19,297 - INFO - Market Status: OPEN
+2025-08-05 13:33:19,298 - INFO - Scanning for trading opportunities...
+2025-08-05 13:33:19,965 - INFO - [MONEYCONTROL] SBIN: Rs.799.65
+2025-08-05 13:33:19,988 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:33:21,840 - INFO - [MONEYCONTROL] TCS: Rs.3052.80
+2025-08-05 13:33:21,845 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:33:23,028 - INFO - [MONEYCONTROL] INFY: Rs.1456.00
+2025-08-05 13:33:23,042 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:33:23,950 - INFO - [MONEYCONTROL] ITC: Rs.413.40
+2025-08-05 13:33:23,953 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:33:24,706 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.60
+2025-08-05 13:33:24,709 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:33:24,980 - INFO - Found 0 trading opportunities
+2025-08-05 13:33:24,980 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:33:24,981 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:35:11,751 - INFO - Enhanced Intraday ML Trading Bot stopped
+2025-08-05 13:35:29,992 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 13:35:29,993 - INFO - 🧠 Initializing ML models...
+2025-08-05 13:35:29,994 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 13:35:29,994 - INFO - 📊 Fetching fresh training data from market...
+2025-08-05 13:35:30,003 - INFO - [HIST] SBIN: 365 days generated
+2025-08-05 13:35:31,019 - INFO - [HIST] TCS: 365 days generated
+2025-08-05 13:35:32,037 - INFO - [HIST] INFY: 365 days generated
+2025-08-05 13:35:33,053 - INFO - [HIST] ITC: 365 days generated
+2025-08-05 13:35:34,073 - INFO - [HIST] RELIANCE: 365 days generated
+2025-08-05 13:35:35,119 - INFO - 📈 Training data summary:
+2025-08-05 13:35:35,119 - INFO -    Symbols: 5
+2025-08-05 13:35:35,119 - INFO -    Total data points: 1,825
+2025-08-05 13:35:35,120 - INFO -    Average days per symbol: 365
+2025-08-05 13:35:35,120 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 13:35:35,120 - INFO - Training ML models...
+2025-08-05 13:35:57,562 - INFO - LSTM model trained successfully
+2025-08-05 13:35:57,918 - INFO - Signal Classifier trained - RF: 0.652, XGB: 0.710
+2025-08-05 13:36:26,320 - INFO - LSTM model trained successfully
+2025-08-05 13:36:26,680 - INFO - Signal Classifier trained - RF: 0.536, XGB: 0.565
+2025-08-05 13:36:53,137 - INFO - LSTM model trained successfully
+2025-08-05 13:36:53,506 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.667
+2025-08-05 13:37:19,213 - INFO - LSTM model trained successfully
+2025-08-05 13:37:19,588 - INFO - Signal Classifier trained - RF: 0.609, XGB: 0.580
+2025-08-05 13:37:45,605 - INFO - LSTM model trained successfully
+2025-08-05 13:37:45,984 - INFO - Signal Classifier trained - RF: 0.580, XGB: 0.609
+2025-08-05 13:37:45,984 - INFO - ML models training completed. Success rate: 10/10
+2025-08-05 13:37:45,984 - INFO - 💾 Saving trained models...
+2025-08-05 13:37:45,988 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 13:37:46,147 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 13:37:46,148 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 13:37:46,148 - INFO -    ✓ LSTM price prediction
+2025-08-05 13:37:46,148 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 13:37:46,148 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 13:37:46,149 - INFO -    ✓ News sentiment analysis
+2025-08-05 13:37:46,149 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 13:37:46,151 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 13:37:46,152 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:37:46,152 - INFO - Market Status: OPEN
+2025-08-05 13:37:46,153 - INFO - Scanning for trading opportunities...
+2025-08-05 13:37:46,967 - INFO - [MONEYCONTROL] SBIN: Rs.799.65
+2025-08-05 13:37:46,970 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:37:51,364 - INFO - [MONEYCONTROL] TCS: Rs.3052.80
+2025-08-05 13:37:51,368 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:37:53,001 - INFO - [MONEYCONTROL] INFY: Rs.1456.00
+2025-08-05 13:37:53,004 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:37:53,993 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 13:37:53,999 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:37:55,797 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.60
+2025-08-05 13:37:55,804 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:37:56,168 - INFO - Found 0 trading opportunities
+2025-08-05 13:37:56,168 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:37:56,169 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:39:54,110 - INFO - [MONEYCONTROL] SBIN: Rs.799.65
+2025-08-05 13:39:54,870 - INFO - [MONEYCONTROL] TCS: Rs.3052.80
+2025-08-05 13:40:02,318 - INFO - [MONEYCONTROL] INFY: Rs.1456.00
+2025-08-05 13:40:03,003 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 13:40:03,711 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.60
+2025-08-05 13:40:56,171 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:40:56,172 - INFO - Market Status: OPEN
+2025-08-05 13:40:56,173 - INFO - Scanning for trading opportunities...
+2025-08-05 13:40:56,179 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:40:56,821 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:40:57,332 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:40:57,861 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:40:58,307 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:40:58,700 - INFO - Found 0 trading opportunities
+2025-08-05 13:40:58,701 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:40:58,701 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:42:10,718 - INFO - [MONEYCONTROL] SBIN: Rs.799.65
+2025-08-05 13:42:11,817 - INFO - [MONEYCONTROL] TCS: Rs.3055.60
+2025-08-05 13:42:19,340 - INFO - [MONEYCONTROL] INFY: Rs.1456.00
+2025-08-05 13:42:20,094 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 13:42:21,218 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.60
+2025-08-05 13:43:58,702 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:43:58,705 - INFO - Market Status: OPEN
+2025-08-05 13:43:58,705 - INFO - Scanning for trading opportunities...
+2025-08-05 13:43:58,716 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:43:59,263 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:43:59,691 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:44:00,118 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:44:00,532 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:44:00,971 - INFO - Found 0 trading opportunities
+2025-08-05 13:44:00,972 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:44:00,972 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:44:12,705 - INFO - [MONEYCONTROL] SBIN: Rs.799.65
+2025-08-05 13:44:13,529 - INFO - [MONEYCONTROL] TCS: Rs.3055.60
+2025-08-05 13:44:20,864 - INFO - [MONEYCONTROL] INFY: Rs.1456.00
+2025-08-05 13:44:22,068 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 13:44:22,832 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.60
+2025-08-05 13:46:29,178 - INFO - [MONEYCONTROL] SBIN: Rs.799.65
+2025-08-05 13:46:30,214 - INFO - [MONEYCONTROL] TCS: Rs.3055.60
+2025-08-05 13:46:37,797 - INFO - [MONEYCONTROL] INFY: Rs.1456.00
+2025-08-05 13:46:39,341 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 13:46:40,317 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.60
+2025-08-05 13:47:00,974 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:47:00,975 - INFO - Market Status: OPEN
+2025-08-05 13:47:00,976 - INFO - Scanning for trading opportunities...
+2025-08-05 13:47:00,985 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:47:01,499 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:47:01,899 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:47:02,422 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:47:02,819 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:47:03,339 - INFO - Found 0 trading opportunities
+2025-08-05 13:47:03,340 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:47:03,340 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:48:31,523 - INFO - [MONEYCONTROL] SBIN: Rs.799.65
+2025-08-05 13:48:32,323 - INFO - [MONEYCONTROL] TCS: Rs.3055.60
+2025-08-05 13:48:39,764 - INFO - [MONEYCONTROL] INFY: Rs.1456.00
+2025-08-05 13:48:40,683 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 13:48:41,386 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.60
+2025-08-05 13:50:03,341 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:50:03,342 - INFO - Market Status: OPEN
+2025-08-05 13:50:03,343 - INFO - Scanning for trading opportunities...
+2025-08-05 13:50:03,354 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:50:03,981 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:50:04,380 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:50:04,786 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:50:05,163 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:50:05,633 - INFO - Found 0 trading opportunities
+2025-08-05 13:50:05,634 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:50:05,634 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:50:47,758 - INFO - [MONEYCONTROL] SBIN: Rs.799.65
+2025-08-05 13:50:48,697 - INFO - [MONEYCONTROL] TCS: Rs.3058.50
+2025-08-05 13:50:55,773 - INFO - [MONEYCONTROL] INFY: Rs.1456.00
+2025-08-05 13:50:56,577 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 13:50:57,885 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.60
+2025-08-05 13:53:03,697 - INFO - [MONEYCONTROL] SBIN: Rs.799.65
+2025-08-05 13:53:04,424 - INFO - [MONEYCONTROL] TCS: Rs.3055.60
+2025-08-05 13:53:05,636 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:53:05,638 - INFO - Market Status: OPEN
+2025-08-05 13:53:05,638 - INFO - Scanning for trading opportunities...
+2025-08-05 13:53:05,646 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:53:06,193 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:53:07,756 - INFO - [MONEYCONTROL] INFY: Rs.1456.00
+2025-08-05 13:53:07,827 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:53:09,040 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 13:53:09,047 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:53:10,688 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.60
+2025-08-05 13:53:10,695 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:53:11,074 - INFO - Found 0 trading opportunities
+2025-08-05 13:53:11,075 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:53:11,075 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:55:16,727 - INFO - [MONEYCONTROL] SBIN: Rs.799.65
+2025-08-05 13:55:17,751 - INFO - [MONEYCONTROL] TCS: Rs.3055.60
+2025-08-05 13:55:24,499 - INFO - [MONEYCONTROL] INFY: Rs.1456.00
+2025-08-05 13:55:25,192 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 13:55:26,154 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.60
+2025-08-05 13:56:11,078 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:56:11,079 - INFO - Market Status: OPEN
+2025-08-05 13:56:11,080 - INFO - Scanning for trading opportunities...
+2025-08-05 13:56:11,084 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:56:11,707 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:56:12,091 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:56:12,679 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:56:13,207 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:56:13,989 - INFO - Found 0 trading opportunities
+2025-08-05 13:56:13,990 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:56:13,990 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:57:32,266 - INFO - [MONEYCONTROL] SBIN: Rs.799.65
+2025-08-05 13:57:33,466 - INFO - [MONEYCONTROL] TCS: Rs.3055.60
+2025-08-05 13:57:40,818 - INFO - [MONEYCONTROL] INFY: Rs.1458.10
+2025-08-05 13:57:41,559 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 13:57:42,257 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.60
+2025-08-05 13:59:13,991 - INFO - === TRADING CYCLE START ===
+2025-08-05 13:59:13,992 - INFO - Market Status: OPEN
+2025-08-05 13:59:13,993 - INFO - Scanning for trading opportunities...
+2025-08-05 13:59:14,003 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 13:59:14,878 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 13:59:15,425 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 13:59:16,486 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 13:59:17,260 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 13:59:17,672 - INFO - Found 0 trading opportunities
+2025-08-05 13:59:17,673 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 13:59:17,674 - INFO - === TRADING CYCLE END ===
+2025-08-05 13:59:33,050 - INFO - [MONEYCONTROL] SBIN: Rs.799.65
+2025-08-05 13:59:50,617 - INFO - [MONEYCONTROL] TCS: Rs.3055.60
+2025-08-05 13:59:57,495 - INFO - [MONEYCONTROL] INFY: Rs.1458.10
+2025-08-05 13:59:58,254 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 13:59:59,435 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.60
+2025-08-05 14:01:49,105 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:02:06,455 - INFO - [MONEYCONTROL] TCS: Rs.3055.60
+2025-08-05 14:02:13,978 - INFO - [MONEYCONTROL] INFY: Rs.1458.10
+2025-08-05 14:02:14,753 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 14:02:15,544 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.00
+2025-08-05 14:02:17,675 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:02:17,676 - INFO - Market Status: OPEN
+2025-08-05 14:02:17,677 - INFO - Scanning for trading opportunities...
+2025-08-05 14:02:17,686 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:02:18,697 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:02:19,135 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:02:19,573 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:02:19,959 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:02:20,381 - INFO - Found 0 trading opportunities
+2025-08-05 14:02:20,381 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 14:02:20,382 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:04:05,633 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:04:22,746 - INFO - [MONEYCONTROL] TCS: Rs.3055.60
+2025-08-05 14:04:30,108 - INFO - [MONEYCONTROL] INFY: Rs.1458.10
+2025-08-05 14:04:30,802 - INFO - [MONEYCONTROL] ITC: Rs.413.60
+2025-08-05 14:04:31,530 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.00
+2025-08-05 14:05:20,383 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:05:20,384 - INFO - Market Status: OPEN
+2025-08-05 14:05:20,385 - INFO - Scanning for trading opportunities...
+2025-08-05 14:05:20,397 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:05:20,849 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:05:21,251 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:05:21,667 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:05:22,036 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:05:22,476 - INFO - Found 0 trading opportunities
+2025-08-05 14:05:22,477 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 14:05:22,477 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:06:20,689 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:06:38,438 - INFO - [MONEYCONTROL] TCS: Rs.3055.60
+2025-08-05 14:06:45,525 - INFO - [MONEYCONTROL] INFY: Rs.1458.10
+2025-08-05 14:06:46,726 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:06:47,443 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.00
+2025-08-05 14:08:22,479 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:08:22,480 - INFO - Market Status: OPEN
+2025-08-05 14:08:22,481 - INFO - Scanning for trading opportunities...
+2025-08-05 14:08:23,371 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:08:23,377 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:08:23,989 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:08:24,377 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:08:24,762 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:08:25,220 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:08:25,651 - INFO - Found 0 trading opportunities
+2025-08-05 14:08:25,652 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 14:08:25,653 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:08:53,008 - INFO - [MONEYCONTROL] TCS: Rs.3055.60
+2025-08-05 14:09:01,673 - INFO - [MONEYCONTROL] INFY: Rs.1458.10
+2025-08-05 14:09:02,460 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:09:03,218 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.00
+2025-08-05 14:10:38,151 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:10:55,796 - INFO - [MONEYCONTROL] TCS: Rs.3058.40
+2025-08-05 14:11:02,744 - INFO - [MONEYCONTROL] INFY: Rs.1458.10
+2025-08-05 14:11:03,524 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:11:04,231 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.00
+2025-08-05 14:11:25,654 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:11:25,655 - INFO - Market Status: OPEN
+2025-08-05 14:11:25,656 - INFO - Scanning for trading opportunities...
+2025-08-05 14:11:25,661 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:11:26,205 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:11:26,598 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:11:27,015 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:11:27,428 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:11:27,844 - INFO - Found 0 trading opportunities
+2025-08-05 14:11:27,845 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 14:11:27,845 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:12:54,204 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:13:11,561 - INFO - [MONEYCONTROL] TCS: Rs.3058.50
+2025-08-05 14:13:18,390 - INFO - [MONEYCONTROL] INFY: Rs.1458.60
+2025-08-05 14:13:19,346 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:13:20,212 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.00
+2025-08-05 14:14:27,847 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:14:27,848 - INFO - Market Status: OPEN
+2025-08-05 14:14:27,849 - INFO - Scanning for trading opportunities...
+2025-08-05 14:14:27,855 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:14:28,364 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:14:28,767 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:14:29,237 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:14:29,591 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:14:30,016 - INFO - Found 0 trading opportunities
+2025-08-05 14:14:30,016 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 14:14:30,018 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:15:10,039 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:15:26,954 - INFO - [MONEYCONTROL] TCS: Rs.3056.40
+2025-08-05 14:15:34,371 - INFO - [MONEYCONTROL] INFY: Rs.1458.10
+2025-08-05 14:15:36,052 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:15:36,805 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.00
+2025-08-05 14:17:26,148 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:17:30,019 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:17:30,020 - INFO - Market Status: OPEN
+2025-08-05 14:17:30,020 - INFO - Scanning for trading opportunities...
+2025-08-05 14:17:30,042 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:17:31,461 - INFO - [MONEYCONTROL] TCS: Rs.3058.40
+2025-08-05 14:17:31,470 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:17:31,956 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:17:32,563 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:17:32,993 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:17:33,409 - INFO - Found 0 trading opportunities
+2025-08-05 14:17:33,410 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 14:17:33,410 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:17:49,736 - INFO - [MONEYCONTROL] INFY: Rs.1458.10
+2025-08-05 14:17:50,946 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:17:51,850 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.80
+2025-08-05 14:19:41,392 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:19:42,115 - INFO - [MONEYCONTROL] TCS: Rs.3058.40
+2025-08-05 14:20:06,595 - INFO - [MONEYCONTROL] INFY: Rs.1458.60
+2025-08-05 14:20:07,349 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:20:08,060 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.00
+2025-08-05 14:20:33,411 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:20:33,412 - INFO - Market Status: OPEN
+2025-08-05 14:20:33,412 - INFO - Scanning for trading opportunities...
+2025-08-05 14:20:33,423 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:20:33,950 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:20:34,338 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:20:34,760 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:20:35,252 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:20:36,236 - INFO - Found 0 trading opportunities
+2025-08-05 14:20:36,237 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 14:20:36,237 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:21:57,294 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:21:58,398 - INFO - [MONEYCONTROL] TCS: Rs.3058.40
+2025-08-05 14:22:21,588 - INFO - [MONEYCONTROL] INFY: Rs.1458.10
+2025-08-05 14:22:22,751 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:22:23,468 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.00
+2025-08-05 14:23:36,238 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:23:36,239 - INFO - Market Status: OPEN
+2025-08-05 14:23:36,240 - INFO - Scanning for trading opportunities...
+2025-08-05 14:23:36,251 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:23:36,762 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:23:37,144 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:23:37,516 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:23:37,883 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:23:38,365 - INFO - Found 0 trading opportunities
+2025-08-05 14:23:38,365 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 14:23:38,366 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:24:13,102 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:24:13,933 - INFO - [MONEYCONTROL] TCS: Rs.3058.40
+2025-08-05 14:24:37,582 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:24:38,385 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:24:39,082 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.00
+2025-08-05 14:26:30,226 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:26:30,958 - INFO - [MONEYCONTROL] TCS: Rs.3058.40
+2025-08-05 14:26:38,369 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:26:38,370 - INFO - Market Status: OPEN
+2025-08-05 14:26:38,371 - INFO - Scanning for trading opportunities...
+2025-08-05 14:26:38,381 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:26:38,848 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:26:40,021 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:26:40,027 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:26:41,110 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:26:41,115 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:26:42,149 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.00
+2025-08-05 14:26:42,154 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:26:42,553 - INFO - Found 0 trading opportunities
+2025-08-05 14:26:42,554 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 14:26:42,554 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:28:44,740 - INFO - [MONEYCONTROL] SBIN: Rs.798.15
+2025-08-05 14:28:45,505 - INFO - [MONEYCONTROL] TCS: Rs.3058.40
+2025-08-05 14:28:53,306 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:28:55,317 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:28:56,022 - INFO - [MONEYCONTROL] RELIANCE: Rs.1389.80
+2025-08-05 14:29:42,556 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:29:42,557 - INFO - Market Status: OPEN
+2025-08-05 14:29:42,557 - INFO - Scanning for trading opportunities...
+2025-08-05 14:29:42,567 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:29:43,250 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:29:43,716 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:29:44,186 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:29:44,564 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:29:44,971 - INFO - Found 0 trading opportunities
+2025-08-05 14:29:44,972 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 14:29:44,972 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:31:08,528 - INFO - [MONEYCONTROL] TCS: Rs.3055.70
+2025-08-05 14:31:15,741 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:31:16,854 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:31:17,596 - INFO - [MONEYCONTROL] RELIANCE: Rs.1389.80
+2025-08-05 14:31:28,936 - INFO - [MONEYCONTROL] SBIN: Rs.797.05
+2025-08-05 14:32:44,974 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:32:44,975 - INFO - Market Status: OPEN
+2025-08-05 14:32:44,976 - INFO - Scanning for trading opportunities...
+2025-08-05 14:32:44,987 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:32:45,629 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:32:46,133 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:32:46,648 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:32:47,124 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:32:47,752 - INFO - Found 0 trading opportunities
+2025-08-05 14:32:47,752 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 14:32:47,753 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:33:09,978 - INFO - [MONEYCONTROL] TCS: Rs.3058.40
+2025-08-05 14:33:17,304 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:33:18,287 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:33:19,012 - INFO - [MONEYCONTROL] RELIANCE: Rs.1389.80
+2025-08-05 14:33:29,902 - INFO - [MONEYCONTROL] SBIN: Rs.797.05
+2025-08-05 14:35:11,353 - INFO - [MONEYCONTROL] TCS: Rs.3058.40
+2025-08-05 14:35:19,474 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:35:20,362 - INFO - [MONEYCONTROL] ITC: Rs.414.20
+2025-08-05 14:35:21,226 - INFO - [MONEYCONTROL] RELIANCE: Rs.1389.80
+2025-08-05 14:35:33,120 - INFO - [MONEYCONTROL] SBIN: Rs.797.05
+2025-08-05 14:35:47,755 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:35:47,757 - INFO - Market Status: OPEN
+2025-08-05 14:35:47,758 - INFO - Scanning for trading opportunities...
+2025-08-05 14:35:47,772 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:35:48,495 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:35:49,510 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:35:52,326 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:35:52,910 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:35:53,855 - INFO - Found 0 trading opportunities
+2025-08-05 14:35:53,856 - INFO - Portfolio: Cash: Rs.50000.00, Invested: Rs.0.00, P&L: Rs.0.00
+2025-08-05 14:35:53,856 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:37:13,558 - INFO - [MONEYCONTROL] TCS: Rs.3059.80
+2025-08-05 14:37:21,018 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:37:21,845 - INFO - [MONEYCONTROL] ITC: Rs.414.20
+2025-08-05 14:37:22,594 - INFO - [MONEYCONTROL] RELIANCE: Rs.1389.80
+2025-08-05 14:37:50,161 - INFO - [MONEYCONTROL] SBIN: Rs.797.05
+2025-08-05 14:38:17,619 - INFO - Enhanced Intraday ML Trading Bot stopped
+2025-08-05 14:38:36,042 - INFO - Enhanced Intraday ML Trading Bot initialized with Rs.50,000.00 capital
+2025-08-05 14:38:36,042 - INFO - 🧠 Initializing ML models...
+2025-08-05 14:38:36,201 - INFO - 🔄 No pre-trained models found, starting training process...
+2025-08-05 14:38:36,229 - INFO - 📁 Using cached training data
+2025-08-05 14:38:36,230 - INFO - 📈 Training data summary:
+2025-08-05 14:38:36,230 - INFO -    Symbols: 5
+2025-08-05 14:38:36,230 - INFO -    Total data points: 1,825
+2025-08-05 14:38:36,230 - INFO -    Average days per symbol: 365
+2025-08-05 14:38:36,230 - INFO - 🏋️ Training ML models (this may take 2-5 minutes)...
+2025-08-05 14:38:36,231 - INFO - Training ML models...
+2025-08-05 14:39:00,698 - INFO - LSTM model trained successfully
+2025-08-05 14:39:01,158 - INFO - Signal Classifier trained - RF: 0.652, XGB: 0.710
+2025-08-05 14:39:24,759 - INFO - LSTM model trained successfully
+2025-08-05 14:39:25,233 - INFO - Signal Classifier trained - RF: 0.536, XGB: 0.565
+2025-08-05 14:39:50,131 - INFO - LSTM model trained successfully
+2025-08-05 14:39:50,517 - INFO - Signal Classifier trained - RF: 0.696, XGB: 0.667
+2025-08-05 14:40:16,130 - INFO - LSTM model trained successfully
+2025-08-05 14:40:16,557 - INFO - Signal Classifier trained - RF: 0.609, XGB: 0.580
+2025-08-05 14:40:43,889 - INFO - LSTM model trained successfully
+2025-08-05 14:40:44,316 - INFO - Signal Classifier trained - RF: 0.580, XGB: 0.609
+2025-08-05 14:40:44,317 - INFO - ML models training completed. Success rate: 10/10
+2025-08-05 14:40:44,318 - INFO - 💾 Saving trained models...
+2025-08-05 14:40:44,318 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-08-05 14:40:44,495 - INFO - ✅ ML models trained and saved successfully!
+2025-08-05 14:40:44,495 - INFO - 🎯 ML capabilities enabled:
+2025-08-05 14:40:44,495 - INFO -    ✓ LSTM price prediction
+2025-08-05 14:40:44,496 - INFO -    ✓ Random Forest/XGBoost classification
+2025-08-05 14:40:44,496 - INFO -    ✓ Reinforcement Learning position sizing
+2025-08-05 14:40:44,496 - INFO -    ✓ News sentiment analysis
+2025-08-05 14:40:44,497 - INFO -    ✓ Ensemble signal fusion
+2025-08-05 14:40:44,499 - INFO - Enhanced Intraday ML Trading Bot started
+2025-08-05 14:40:44,500 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:40:44,500 - INFO - Market Status: OPEN
+2025-08-05 14:40:44,501 - INFO - Scanning for trading opportunities...
+2025-08-05 14:40:46,508 - INFO - [MONEYCONTROL] SBIN: Rs.797.05
+2025-08-05 14:40:46,635 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:40:48,475 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 14:40:48,478 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:40:49,767 - INFO - [MONEYCONTROL] INFY: Rs.1459.40
+2025-08-05 14:40:49,767 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:40:52,964 - INFO - [MONEYCONTROL] ITC: Rs.414.20
+2025-08-05 14:40:52,975 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 14:40:53,376 - INFO - [OPPORTUNITY] BUY ITC @ Rs.414.20 (Qty: 25, SL: Rs.339.50, Target: Rs.477.93)
+2025-08-05 14:40:53,377 - INFO - Strategy: Multi-Strategy: RSI_OVERSOLD, Combined: gap_trading(0.80), scalping_signals(0.60), reversal_patterns(0.80), Strength: 0.67
+2025-08-05 14:40:53,378 - INFO - ML Components - Tech: 0.00, LSTM: 1.00, Classifier: 1.00, Sentiment: 0.00
+2025-08-05 14:40:54,596 - INFO - [MONEYCONTROL] RELIANCE: Rs.1389.80
+2025-08-05 14:40:54,602 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:40:55,376 - INFO - Found 1 trading opportunities
+2025-08-05 14:40:55,398 - INFO - [EXECUTED] BUY 25 ITC @ Rs.414.20 (Charges: Rs.46.14, Net: Rs.10401.14)
+2025-08-05 14:40:55,399 - INFO - [PROFIT HUNT] Executed trade 1/5
+2025-08-05 14:40:55,902 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.0.00
+2025-08-05 14:40:55,903 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:42:52,584 - INFO - [MONEYCONTROL] SBIN: Rs.797.05
+2025-08-05 14:42:53,282 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 14:43:00,610 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:43:01,318 - INFO - [MONEYCONTROL] ITC: Rs.414.20
+2025-08-05 14:43:02,024 - INFO - [MONEYCONTROL] RELIANCE: Rs.1389.80
+2025-08-05 14:43:55,905 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:43:55,905 - INFO - Market Status: OPEN
+2025-08-05 14:43:55,909 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.20 | ⚪ BREAK-EVEN +Rs.0.00 (+0.00%)
+2025-08-05 14:43:55,909 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 14:43:55,909 - INFO - [TOTAL UNREALIZED P&L] +Rs.0.00
+2025-08-05 14:43:55,909 - INFO - Scanning for trading opportunities...
+2025-08-05 14:43:55,914 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:43:56,528 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:43:57,145 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:43:57,576 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:43:58,200 - INFO - Found 0 trading opportunities
+2025-08-05 14:43:58,200 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.0.00
+2025-08-05 14:43:58,200 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:45:09,287 - INFO - [MONEYCONTROL] SBIN: Rs.797.05
+2025-08-05 14:45:10,564 - INFO - [MONEYCONTROL] TCS: Rs.3059.80
+2025-08-05 14:45:18,100 - INFO - [MONEYCONTROL] INFY: Rs.1459.40
+2025-08-05 14:45:18,979 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 14:45:20,329 - INFO - [MONEYCONTROL] RELIANCE: Rs.1389.80
+2025-08-05 14:46:58,205 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:46:58,205 - INFO - Market Status: OPEN
+2025-08-05 14:46:58,206 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.00 | 🔴 LOSS -Rs.5.00 (-0.05%)
+2025-08-05 14:46:58,206 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 14:46:58,206 - INFO - [TOTAL UNREALIZED P&L] -Rs.5.00
+2025-08-05 14:46:58,206 - INFO - Scanning for trading opportunities...
+2025-08-05 14:46:58,217 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:46:58,823 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:46:59,543 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:47:00,018 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:47:00,558 - INFO - Found 0 trading opportunities
+2025-08-05 14:47:00,558 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.-5.00
+2025-08-05 14:47:00,558 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:47:11,093 - INFO - [MONEYCONTROL] SBIN: Rs.797.55
+2025-08-05 14:47:11,890 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 14:47:18,957 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:47:36,700 - INFO - [MONEYCONTROL] ITC: Rs.414.20
+2025-08-05 14:47:37,468 - INFO - [MONEYCONTROL] RELIANCE: Rs.1389.80
+2025-08-05 14:49:27,889 - INFO - [MONEYCONTROL] SBIN: Rs.797.05
+2025-08-05 14:49:28,691 - INFO - [MONEYCONTROL] TCS: Rs.3059.80
+2025-08-05 14:49:36,532 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:49:53,597 - INFO - [MONEYCONTROL] ITC: Rs.414.20
+2025-08-05 14:49:54,908 - INFO - [MONEYCONTROL] RELIANCE: Rs.1389.80
+2025-08-05 14:50:00,560 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:50:00,560 - INFO - Market Status: OPEN
+2025-08-05 14:50:00,562 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.20 | ⚪ BREAK-EVEN +Rs.0.00 (+0.00%)
+2025-08-05 14:50:00,562 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 14:50:00,562 - INFO - [TOTAL UNREALIZED P&L] +Rs.0.00
+2025-08-05 14:50:00,563 - INFO - Scanning for trading opportunities...
+2025-08-05 14:50:00,566 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:50:01,202 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:50:01,714 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:50:02,230 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:50:02,733 - INFO - Found 0 trading opportunities
+2025-08-05 14:50:02,733 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.0.00
+2025-08-05 14:50:02,733 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:51:28,894 - INFO - [MONEYCONTROL] SBIN: Rs.797.05
+2025-08-05 14:51:29,682 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 14:51:37,414 - INFO - [MONEYCONTROL] INFY: Rs.1459.40
+2025-08-05 14:51:54,615 - INFO - [MONEYCONTROL] ITC: Rs.414.20
+2025-08-05 14:52:12,712 - INFO - [MONEYCONTROL] RELIANCE: Rs.1389.80
+2025-08-05 14:53:02,736 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:53:02,738 - INFO - Market Status: OPEN
+2025-08-05 14:53:02,738 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.20 | ⚪ BREAK-EVEN +Rs.0.00 (+0.00%)
+2025-08-05 14:53:02,740 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 14:53:02,740 - INFO - [TOTAL UNREALIZED P&L] +Rs.0.00
+2025-08-05 14:53:02,740 - INFO - Scanning for trading opportunities...
+2025-08-05 14:53:02,749 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:53:03,366 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:53:03,916 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:53:04,481 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:53:05,087 - INFO - Found 0 trading opportunities
+2025-08-05 14:53:05,087 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.0.00
+2025-08-05 14:53:05,087 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:53:30,363 - INFO - [MONEYCONTROL] SBIN: Rs.797.05
+2025-08-05 14:53:31,809 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 14:53:38,937 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:53:56,771 - INFO - [MONEYCONTROL] ITC: Rs.414.20
+2025-08-05 14:54:13,908 - INFO - [MONEYCONTROL] RELIANCE: Rs.1389.80
+2025-08-05 14:55:31,504 - INFO - [MONEYCONTROL] SBIN: Rs.797.05
+2025-08-05 14:55:49,178 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 14:55:56,306 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:56:05,089 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:56:05,090 - INFO - Market Status: OPEN
+2025-08-05 14:56:06,649 - INFO - [MONEYCONTROL] ITC: Rs.414.20
+2025-08-05 14:56:06,649 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.20 | ⚪ BREAK-EVEN +Rs.0.00 (+0.00%)
+2025-08-05 14:56:06,649 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 14:56:06,649 - INFO - [TOTAL UNREALIZED P&L] +Rs.0.00
+2025-08-05 14:56:06,649 - INFO - Scanning for trading opportunities...
+2025-08-05 14:56:06,656 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:56:07,464 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:56:07,965 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:56:08,487 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:56:08,998 - INFO - Found 0 trading opportunities
+2025-08-05 14:56:08,999 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.0.00
+2025-08-05 14:56:08,999 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:56:30,220 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.70
+2025-08-05 14:57:47,624 - INFO - [MONEYCONTROL] SBIN: Rs.797.55
+2025-08-05 14:58:04,851 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 14:58:12,566 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 14:58:13,333 - INFO - [MONEYCONTROL] ITC: Rs.414.20
+2025-08-05 14:58:47,629 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.70
+2025-08-05 14:59:09,001 - INFO - === TRADING CYCLE START ===
+2025-08-05 14:59:09,002 - INFO - Market Status: OPEN
+2025-08-05 14:59:09,002 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.20 | ⚪ BREAK-EVEN +Rs.0.00 (+0.00%)
+2025-08-05 14:59:09,002 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 14:59:09,004 - INFO - [TOTAL UNREALIZED P&L] +Rs.0.00
+2025-08-05 14:59:09,004 - INFO - Scanning for trading opportunities...
+2025-08-05 14:59:09,011 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 14:59:09,600 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 14:59:10,064 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 14:59:10,489 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 14:59:11,166 - INFO - Found 0 trading opportunities
+2025-08-05 14:59:11,166 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.0.00
+2025-08-05 14:59:11,166 - INFO - === TRADING CYCLE END ===
+2025-08-05 14:59:48,995 - INFO - [MONEYCONTROL] SBIN: Rs.797.55
+2025-08-05 15:00:06,886 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 15:00:14,325 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 15:00:15,110 - INFO - [MONEYCONTROL] ITC: Rs.414.20
+2025-08-05 15:00:50,889 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.70
+2025-08-05 15:01:52,292 - INFO - [MONEYCONTROL] SBIN: Rs.800.45
+2025-08-05 15:02:10,257 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 15:02:11,170 - INFO - === TRADING CYCLE START ===
+2025-08-05 15:02:11,170 - INFO - Market Status: OPEN
+2025-08-05 15:02:11,172 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.20 | ⚪ BREAK-EVEN +Rs.0.00 (+0.00%)
+2025-08-05 15:02:11,172 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 15:02:11,172 - INFO - [TOTAL UNREALIZED P&L] +Rs.0.00
+2025-08-05 15:02:11,172 - INFO - Scanning for trading opportunities...
+2025-08-05 15:02:11,180 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 15:02:11,698 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 15:02:12,214 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 15:02:12,730 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 15:02:13,157 - INFO - Found 0 trading opportunities
+2025-08-05 15:02:13,163 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.0.00
+2025-08-05 15:02:13,164 - INFO - === TRADING CYCLE END ===
+2025-08-05 15:02:17,701 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 15:02:18,642 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:02:52,452 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.70
+2025-08-05 15:04:09,807 - INFO - [MONEYCONTROL] SBIN: Rs.800.45
+2025-08-05 15:04:26,942 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 15:04:34,550 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 15:04:35,286 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:05:09,219 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.70
+2025-08-05 15:05:13,166 - INFO - === TRADING CYCLE START ===
+2025-08-05 15:05:13,169 - INFO - Market Status: OPEN
+2025-08-05 15:05:13,170 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.00 | 🔴 LOSS -Rs.5.00 (-0.05%)
+2025-08-05 15:05:13,170 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 15:05:13,170 - INFO - [TOTAL UNREALIZED P&L] -Rs.5.00
+2025-08-05 15:05:13,171 - INFO - Scanning for trading opportunities...
+2025-08-05 15:05:13,176 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 15:05:13,666 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 15:05:14,077 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 15:05:14,603 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 15:05:15,089 - INFO - Found 0 trading opportunities
+2025-08-05 15:05:15,089 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.-5.00
+2025-08-05 15:05:15,089 - INFO - === TRADING CYCLE END ===
+2025-08-05 15:06:25,763 - INFO - [MONEYCONTROL] SBIN: Rs.800.45
+2025-08-05 15:06:43,514 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 15:06:51,943 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 15:06:52,987 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:07:10,643 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.70
+2025-08-05 15:08:15,098 - INFO - === TRADING CYCLE START ===
+2025-08-05 15:08:15,099 - INFO - Market Status: OPEN
+2025-08-05 15:08:15,099 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.00 | 🔴 LOSS -Rs.5.00 (-0.05%)
+2025-08-05 15:08:15,099 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 15:08:15,099 - INFO - [TOTAL UNREALIZED P&L] -Rs.5.00
+2025-08-05 15:08:15,102 - INFO - Scanning for trading opportunities...
+2025-08-05 15:08:15,121 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 15:08:15,659 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 15:08:16,145 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 15:08:16,737 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 15:08:17,263 - INFO - Found 0 trading opportunities
+2025-08-05 15:08:17,265 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.-5.00
+2025-08-05 15:08:17,265 - INFO - === TRADING CYCLE END ===
+2025-08-05 15:08:27,667 - INFO - [MONEYCONTROL] SBIN: Rs.800.45
+2025-08-05 15:08:45,260 - INFO - [MONEYCONTROL] TCS: Rs.3057.40
+2025-08-05 15:09:09,274 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 15:09:10,009 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:09:26,930 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.70
+2025-08-05 15:10:44,810 - INFO - [MONEYCONTROL] SBIN: Rs.800.10
+2025-08-05 15:11:17,267 - INFO - === TRADING CYCLE START ===
+2025-08-05 15:11:17,268 - INFO - Market Status: OPEN
+2025-08-05 15:11:18,539 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:11:18,539 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.00 | 🔴 LOSS -Rs.5.00 (-0.05%)
+2025-08-05 15:11:18,539 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 15:11:18,539 - INFO - [TOTAL UNREALIZED P&L] -Rs.5.00
+2025-08-05 15:11:18,539 - INFO - Scanning for trading opportunities...
+2025-08-05 15:11:18,550 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 15:11:27,463 - INFO - [MONEYCONTROL] TCS: Rs.3066.10
+2025-08-05 15:11:32,479 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 15:11:36,751 - INFO - [MONEYCONTROL] INFY: Rs.1460.80
+2025-08-05 15:11:36,867 - INFO - [MONEYCONTROL] INFY: Rs.1460.80
+2025-08-05 15:11:36,874 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 15:11:40,847 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.40
+2025-08-05 15:11:40,854 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 15:11:41,280 - INFO - Found 0 trading opportunities
+2025-08-05 15:11:41,283 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.-5.00
+2025-08-05 15:11:41,283 - INFO - === TRADING CYCLE END ===
+2025-08-05 15:11:50,445 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.50
+2025-08-05 15:12:53,777 - INFO - [MONEYCONTROL] SBIN: Rs.800.10
+2025-08-05 15:13:34,212 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:13:44,992 - INFO - [MONEYCONTROL] TCS: Rs.3057.40
+2025-08-05 15:13:52,671 - INFO - [MONEYCONTROL] INFY: Rs.1460.80
+2025-08-05 15:13:53,545 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.40
+2025-08-05 15:14:41,284 - INFO - === TRADING CYCLE START ===
+2025-08-05 15:14:41,284 - INFO - Market Status: OPEN
+2025-08-05 15:14:41,284 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.00 | 🔴 LOSS -Rs.5.00 (-0.05%)
+2025-08-05 15:14:41,284 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 15:14:41,284 - INFO - [TOTAL UNREALIZED P&L] -Rs.5.00
+2025-08-05 15:14:41,284 - INFO - Scanning for trading opportunities...
+2025-08-05 15:14:41,294 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 15:14:41,926 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 15:14:42,405 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 15:14:42,918 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 15:14:43,433 - INFO - Found 0 trading opportunities
+2025-08-05 15:14:43,435 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.-5.00
+2025-08-05 15:14:43,435 - INFO - === TRADING CYCLE END ===
+2025-08-05 15:15:11,050 - INFO - [MONEYCONTROL] SBIN: Rs.800.45
+2025-08-05 15:15:36,148 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:15:47,038 - INFO - [MONEYCONTROL] TCS: Rs.3066.10
+2025-08-05 15:15:55,263 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 15:15:56,072 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.50
+2025-08-05 15:17:13,669 - INFO - [MONEYCONTROL] SBIN: Rs.800.45
+2025-08-05 15:17:37,819 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:17:43,437 - INFO - === TRADING CYCLE START ===
+2025-08-05 15:17:43,437 - INFO - Market Status: OPEN
+2025-08-05 15:17:43,437 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.00 | 🔴 LOSS -Rs.5.00 (-0.05%)
+2025-08-05 15:17:43,437 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 15:17:43,437 - INFO - [TOTAL UNREALIZED P&L] -Rs.5.00
+2025-08-05 15:17:43,437 - INFO - Scanning for trading opportunities...
+2025-08-05 15:17:43,456 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 15:17:44,197 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 15:17:44,815 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 15:17:45,333 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 15:17:45,926 - INFO - Found 0 trading opportunities
+2025-08-05 15:17:45,926 - INFO - Portfolio: Cash: Rs.39598.86, Invested: Rs.10355.00, P&L: Rs.-5.00
+2025-08-05 15:17:45,928 - INFO - === TRADING CYCLE END ===
+2025-08-05 15:17:48,689 - INFO - [MONEYCONTROL] TCS: Rs.3057.40
+2025-08-05 15:17:56,424 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 15:17:57,324 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.70
+2025-08-05 15:19:14,747 - INFO - [MONEYCONTROL] SBIN: Rs.800.45
+2025-08-05 15:19:39,083 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:19:50,187 - INFO - [MONEYCONTROL] TCS: Rs.3066.10
+2025-08-05 15:19:57,910 - INFO - [MONEYCONTROL] INFY: Rs.1458.80
+2025-08-05 15:19:58,743 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.70
+2025-08-05 15:20:45,929 - INFO - === TRADING CYCLE START ===
+2025-08-05 15:20:45,929 - INFO - Market Status: OPEN
+2025-08-05 15:20:45,929 - INFO - [LIVE] ITC: Rs.414.20 -> Rs.414.00 | 🔴 LOSS -Rs.5.00 (-0.05%)
+2025-08-05 15:20:45,929 - INFO - [TARGETS] SL: Rs.339.50 | Target: Rs.477.93
+2025-08-05 15:20:45,929 - INFO - [TOTAL UNREALIZED P&L] -Rs.5.00
+2025-08-05 15:20:45,959 - INFO - [CLOSED] ITC @ Rs.414.00 - Market Close (P&L: Rs.-61.16, Charges: Rs.56.16)
+2025-08-05 15:20:45,960 - INFO - Scanning for trading opportunities...
+2025-08-05 15:20:45,977 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 15:20:46,543 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 15:20:47,161 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 15:20:47,665 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 15:20:48,161 - INFO - [OPPORTUNITY] BUY ITC @ Rs.414.00 (Qty: 25, SL: Rs.339.34, Target: Rs.477.70)
+2025-08-05 15:20:48,162 - INFO - Strategy: Multi-Strategy: RSI_OVERSOLD, Combined: gap_trading(0.80), scalping_signals(0.60), reversal_patterns(0.80), Strength: 0.67
+2025-08-05 15:20:48,164 - INFO - ML Components - Tech: 0.00, LSTM: 1.00, Classifier: 1.00, Sentiment: 0.00
+2025-08-05 15:20:48,180 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 15:20:48,676 - INFO - Found 1 trading opportunities
+2025-08-05 15:20:48,690 - INFO - [EXECUTED] BUY 25 ITC @ Rs.414.00 (Charges: Rs.46.12, Net: Rs.10396.12)
+2025-08-05 15:20:48,692 - INFO - [PROFIT HUNT] Executed trade 1/5
+2025-08-05 15:20:49,206 - INFO - Portfolio: Cash: Rs.39496.58, Invested: Rs.10350.00, P&L: Rs.-61.16
+2025-08-05 15:20:49,207 - INFO - === TRADING CYCLE END ===
+2025-08-05 15:21:17,074 - INFO - [MONEYCONTROL] SBIN: Rs.800.45
+2025-08-05 15:21:43,445 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:21:54,853 - INFO - [MONEYCONTROL] TCS: Rs.3057.40
+2025-08-05 15:22:02,154 - INFO - [MONEYCONTROL] INFY: Rs.1456.60
+2025-08-05 15:22:02,952 - INFO - [MONEYCONTROL] RELIANCE: Rs.1390.70
+2025-08-05 15:23:21,753 - INFO - [MONEYCONTROL] SBIN: Rs.800.45
+2025-08-05 15:23:46,415 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:23:49,208 - INFO - === TRADING CYCLE START ===
+2025-08-05 15:23:49,210 - INFO - Market Status: OPEN
+2025-08-05 15:23:49,211 - INFO - [LIVE] ITC: Rs.414.00 -> Rs.414.00 | ⚪ BREAK-EVEN +Rs.0.00 (+0.00%)
+2025-08-05 15:23:49,212 - INFO - [TARGETS] SL: Rs.339.34 | Target: Rs.477.70
+2025-08-05 15:23:49,213 - INFO - [TOTAL UNREALIZED P&L] +Rs.0.00
+2025-08-05 15:23:49,229 - INFO - [CLOSED] ITC @ Rs.414.00 - Market Close (P&L: Rs.-56.16, Charges: Rs.56.16)
+2025-08-05 15:23:49,231 - INFO - Scanning for trading opportunities...
+2025-08-05 15:23:49,242 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 15:23:49,852 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 15:23:50,354 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 15:23:50,973 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 15:23:51,465 - INFO - [OPPORTUNITY] BUY ITC @ Rs.414.00 (Qty: 25, SL: Rs.339.34, Target: Rs.477.70)
+2025-08-05 15:23:51,465 - INFO - Strategy: Multi-Strategy: RSI_OVERSOLD, Combined: gap_trading(0.80), scalping_signals(0.60), reversal_patterns(0.80), Strength: 0.67
+2025-08-05 15:23:51,465 - INFO - ML Components - Tech: 0.00, LSTM: 1.00, Classifier: 0.00, Sentiment: 0.00
+2025-08-05 15:23:51,475 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 15:23:51,930 - INFO - Found 1 trading opportunities
+2025-08-05 15:23:51,940 - INFO - [EXECUTED] BUY 25 ITC @ Rs.414.00 (Charges: Rs.46.12, Net: Rs.10396.12)
+2025-08-05 15:23:51,944 - INFO - [PROFIT HUNT] Executed trade 1/5
+2025-08-05 15:23:52,445 - INFO - Portfolio: Cash: Rs.39394.30, Invested: Rs.10350.00, P&L: Rs.-117.32
+2025-08-05 15:23:52,446 - INFO - === TRADING CYCLE END ===
+2025-08-05 15:23:57,369 - INFO - [MONEYCONTROL] TCS: Rs.3057.40
+2025-08-05 15:24:04,994 - INFO - [MONEYCONTROL] INFY: Rs.1456.60
+2025-08-05 15:24:06,402 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:25:23,905 - INFO - [MONEYCONTROL] SBIN: Rs.800.45
+2025-08-05 15:25:48,338 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:25:59,489 - INFO - [MONEYCONTROL] TCS: Rs.3057.40
+2025-08-05 15:26:07,346 - INFO - [MONEYCONTROL] INFY: Rs.1456.60
+2025-08-05 15:26:08,908 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:26:52,464 - INFO - === TRADING CYCLE START ===
+2025-08-05 15:26:52,480 - INFO - Market Status: OPEN
+2025-08-05 15:26:52,497 - INFO - [LIVE] ITC: Rs.414.00 -> Rs.414.00 | ⚪ BREAK-EVEN +Rs.0.00 (+0.00%)
+2025-08-05 15:26:52,521 - INFO - [TARGETS] SL: Rs.339.34 | Target: Rs.477.70
+2025-08-05 15:26:52,545 - INFO - [TOTAL UNREALIZED P&L] +Rs.0.00
+2025-08-05 15:26:52,643 - INFO - [CLOSED] ITC @ Rs.414.00 - Market Close (P&L: Rs.-56.16, Charges: Rs.56.16)
+2025-08-05 15:26:52,677 - INFO - Scanning for trading opportunities...
+2025-08-05 15:26:52,710 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 15:26:53,764 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 15:26:54,264 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 15:26:54,888 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 15:26:55,281 - INFO - [OPPORTUNITY] BUY ITC @ Rs.414.00 (Qty: 25, SL: Rs.339.34, Target: Rs.477.70)
+2025-08-05 15:26:55,281 - INFO - Strategy: Multi-Strategy: RSI_OVERSOLD, Combined: gap_trading(0.80), scalping_signals(0.60), reversal_patterns(0.80), Strength: 0.67
+2025-08-05 15:26:55,281 - INFO - ML Components - Tech: 0.00, LSTM: 1.00, Classifier: 0.00, Sentiment: 0.00
+2025-08-05 15:26:55,287 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 15:26:56,456 - INFO - Found 1 trading opportunities
+2025-08-05 15:26:56,475 - INFO - [EXECUTED] BUY 25 ITC @ Rs.414.00 (Charges: Rs.46.12, Net: Rs.10396.12)
+2025-08-05 15:26:56,491 - INFO - [PROFIT HUNT] Executed trade 1/5
+2025-08-05 15:26:56,993 - INFO - Portfolio: Cash: Rs.39292.02, Invested: Rs.10350.00, P&L: Rs.-173.48
+2025-08-05 15:26:56,993 - INFO - === TRADING CYCLE END ===
+2025-08-05 15:27:27,002 - INFO - [MONEYCONTROL] SBIN: Rs.800.45
+2025-08-05 15:27:51,555 - INFO - [MONEYCONTROL] ITC: Rs.414.00
+2025-08-05 15:28:02,531 - INFO - [MONEYCONTROL] TCS: Rs.3057.40
+2025-08-05 15:28:10,462 - INFO - [MONEYCONTROL] INFY: Rs.1460.60
+2025-08-05 15:28:11,254 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:29:28,610 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 15:29:53,037 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:29:56,997 - INFO - === TRADING CYCLE START ===
+2025-08-05 15:29:56,998 - INFO - Market Status: OPEN
+2025-08-05 15:29:56,998 - INFO - [LIVE] ITC: Rs.414.00 -> Rs.414.50 | 🟢 PROFIT +Rs.12.50 (+0.12%)
+2025-08-05 15:29:56,998 - INFO - [TARGETS] SL: Rs.339.34 | Target: Rs.477.70
+2025-08-05 15:29:56,998 - INFO - [TOTAL UNREALIZED P&L] +Rs.12.50
+2025-08-05 15:29:57,020 - INFO - [CLOSED] ITC @ Rs.414.50 - Market Close (P&L: Rs.-43.73, Charges: Rs.56.23)
+2025-08-05 15:29:57,026 - INFO - Scanning for trading opportunities...
+2025-08-05 15:29:57,055 - INFO - [HIST] SBIN: 90 days generated
+2025-08-05 15:29:57,983 - INFO - [HIST] TCS: 90 days generated
+2025-08-05 15:29:58,521 - INFO - [HIST] INFY: 90 days generated
+2025-08-05 15:29:59,022 - INFO - [HIST] ITC: 90 days generated
+2025-08-05 15:29:59,635 - INFO - [OPPORTUNITY] BUY ITC @ Rs.414.50 (Qty: 25, SL: Rs.339.75, Target: Rs.478.28)
+2025-08-05 15:29:59,635 - INFO - Strategy: Multi-Strategy: RSI_OVERSOLD, Combined: gap_trading(0.80), scalping_signals(0.60), reversal_patterns(0.80), Strength: 0.67
+2025-08-05 15:29:59,635 - INFO - ML Components - Tech: 0.00, LSTM: 1.00, Classifier: 0.00, Sentiment: 0.00
+2025-08-05 15:29:59,645 - INFO - [HIST] RELIANCE: 90 days generated
+2025-08-05 15:30:00,248 - INFO - Found 1 trading opportunities
+2025-08-05 15:30:00,270 - INFO - [EXECUTED] BUY 25 ITC @ Rs.414.50 (Charges: Rs.46.18, Net: Rs.10408.68)
+2025-08-05 15:30:00,271 - INFO - [PROFIT HUNT] Executed trade 1/5
+2025-08-05 15:30:00,774 - INFO - Portfolio: Cash: Rs.39189.62, Invested: Rs.10362.50, P&L: Rs.-217.20
+2025-08-05 15:30:00,774 - INFO - === TRADING CYCLE END ===
+2025-08-05 15:30:03,910 - INFO - [MONEYCONTROL] TCS: Rs.3057.40
+2025-08-05 15:30:11,801 - INFO - [MONEYCONTROL] INFY: Rs.1460.60
+2025-08-05 15:30:12,626 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:31:29,997 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 15:31:54,407 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:32:05,329 - INFO - [MONEYCONTROL] TCS: Rs.3057.40
+2025-08-05 15:32:13,015 - INFO - [MONEYCONTROL] INFY: Rs.1460.60
+2025-08-05 15:32:13,854 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:33:00,777 - INFO - === POST-MARKET ANALYSIS ===
+2025-08-05 15:33:00,777 - INFO - Daily P&L: Rs.455.38
+2025-08-05 15:33:00,777 - INFO - Trades: 9, Win Rate: 0.0%
+2025-08-05 15:33:00,779 - INFO - Active Positions: 1
+2025-08-05 15:33:00,779 - INFO - Tomorrow: Review and adjust position sizes
+2025-08-05 15:33:00,779 - INFO - Tomorrow: Look for new opportunities
+2025-08-05 15:33:00,779 - INFO - === POST-MARKET ANALYSIS COMPLETE ===
+2025-08-05 15:33:31,522 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 15:33:55,475 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:34:06,814 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 15:34:14,128 - INFO - [MONEYCONTROL] INFY: Rs.1460.60
+2025-08-05 15:34:14,952 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:35:33,944 - INFO - [MONEYCONTROL] SBIN: Rs.800.90
+2025-08-05 15:35:58,450 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:36:09,649 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 15:36:19,543 - INFO - [MONEYCONTROL] INFY: Rs.1460.60
+2025-08-05 15:36:21,335 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:37:40,307 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 15:38:04,739 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:38:15,642 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 15:38:23,438 - INFO - [MONEYCONTROL] INFY: Rs.1460.60
+2025-08-05 15:38:24,820 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:39:42,840 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 15:40:07,962 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:40:19,019 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 15:40:26,830 - INFO - [MONEYCONTROL] INFY: Rs.1461.40
+2025-08-05 15:40:27,646 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:41:45,595 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 15:42:09,944 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:42:21,332 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 15:42:29,134 - INFO - [MONEYCONTROL] INFY: Rs.1461.40
+2025-08-05 15:42:29,932 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:43:47,677 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 15:44:11,737 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:44:22,743 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 15:44:30,936 - INFO - [MONEYCONTROL] INFY: Rs.1461.40
+2025-08-05 15:44:31,724 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:45:49,442 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 15:46:13,328 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:46:24,774 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 15:46:32,215 - INFO - [MONEYCONTROL] INFY: Rs.1461.40
+2025-08-05 15:46:33,088 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:47:52,108 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 15:48:16,557 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:48:27,395 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 15:48:34,912 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 15:48:36,325 - INFO - [MONEYCONTROL] RELIANCE: Rs.1392.80
+2025-08-05 15:49:54,334 - INFO - [MONEYCONTROL] SBIN: Rs.800.90
+2025-08-05 15:50:19,231 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:50:30,107 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 15:50:37,516 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 15:50:39,053 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 15:51:57,200 - INFO - [MONEYCONTROL] SBIN: Rs.800.90
+2025-08-05 15:52:21,809 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:52:33,195 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 15:52:41,766 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 15:52:43,052 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 15:54:00,621 - INFO - [MONEYCONTROL] SBIN: Rs.800.90
+2025-08-05 15:54:25,069 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:54:36,021 - INFO - [MONEYCONTROL] TCS: Rs.3060.00
+2025-08-05 15:54:43,862 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 15:54:44,800 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 15:56:02,608 - INFO - [MONEYCONTROL] SBIN: Rs.800.95
+2025-08-05 15:56:28,054 - INFO - [MONEYCONTROL] ITC: Rs.414.50
+2025-08-05 15:56:39,148 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 15:56:46,893 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 15:56:47,800 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 15:58:07,282 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 15:58:30,981 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 15:58:42,350 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 15:58:49,956 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 15:58:51,056 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:00:00,794 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:00:09,400 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:00:33,651 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:00:44,528 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:00:52,313 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:00:53,054 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:02:11,178 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:02:35,582 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:02:46,413 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:02:53,846 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:02:55,639 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:03:00,797 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:04:13,247 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:04:37,831 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:04:48,764 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:04:57,124 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:04:57,814 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:06:00,799 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:06:15,498 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:06:41,270 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:06:52,614 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:07:00,855 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:07:01,639 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:08:22,018 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:08:46,051 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:08:56,950 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:09:00,800 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:09:05,223 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:09:06,545 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:10:23,876 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:10:48,225 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:10:59,592 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:11:06,974 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:11:07,741 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:12:00,802 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:12:25,604 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:13:06,201 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:13:17,065 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:13:24,682 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:13:25,420 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:14:26,660 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:15:00,825 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:15:08,041 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:15:19,023 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:15:26,764 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:15:27,618 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:16:28,556 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:17:11,319 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:17:22,338 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:17:30,842 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:17:31,589 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:18:00,843 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:18:33,529 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:19:14,934 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:19:26,214 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:19:33,366 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:19:34,109 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:20:34,540 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:21:00,853 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:21:31,622 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:21:42,464 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:21:50,026 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:21:50,740 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:22:51,970 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:23:33,071 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:23:43,962 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:23:51,763 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:23:52,517 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:24:00,854 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:24:53,363 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:25:34,459 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:25:45,319 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:25:53,313 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:25:54,108 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:26:55,248 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:27:00,856 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:27:36,551 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:27:47,992 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:27:55,144 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:27:56,028 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:28:57,121 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:29:37,918 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:29:56,516 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:29:57,353 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:30:00,858 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:30:08,564 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:31:00,839 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:31:41,964 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:31:59,284 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:32:00,170 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:32:11,723 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:33:00,866 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:33:02,646 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:33:43,380 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:34:01,108 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:34:02,406 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:34:13,227 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:35:04,588 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:35:45,027 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:36:00,867 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:36:03,014 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:36:04,782 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:36:15,744 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:37:07,543 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:37:48,385 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:38:06,562 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:38:07,577 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:38:18,509 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:39:00,869 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:39:10,490 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:39:51,556 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:40:09,333 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:40:10,105 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:40:20,913 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:41:12,867 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:41:53,792 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:42:00,872 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:42:11,611 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:42:12,538 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:42:23,369 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:43:14,569 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:44:11,842 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:44:28,903 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:44:30,186 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:44:41,822 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:45:00,874 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:45:17,002 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:46:15,157 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:46:33,076 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:46:33,905 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:46:45,079 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:47:21,158 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:48:00,875 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:48:19,120 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:48:37,684 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:48:39,448 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:48:50,459 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:49:25,125 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:50:21,683 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:50:39,395 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:50:57,153 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:51:00,876 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:51:08,159 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:51:42,141 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:52:39,652 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:52:57,148 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:53:14,934 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:53:25,927 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:53:43,686 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:54:00,899 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:54:40,832 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:54:58,726 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:55:16,775 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:55:27,922 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:55:45,574 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:56:43,325 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:57:00,892 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:57:00,916 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 16:57:18,679 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:57:30,006 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 16:57:47,328 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 16:58:44,567 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 16:59:02,338 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 16:59:20,052 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 16:59:30,850 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 17:00:00,917 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 17:00:05,529 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 17:00:46,761 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 17:01:04,136 - INFO - [MONEYCONTROL] INFY: Rs.1460.30
+2025-08-05 17:01:21,636 - INFO - [MONEYCONTROL] RELIANCE: Rs.1391.70
+2025-08-05 17:01:32,944 - INFO - [MONEYCONTROL] TCS: Rs.3063.90
+2025-08-05 17:02:06,993 - INFO - [MONEYCONTROL] SBIN: Rs.800.60
+2025-08-05 17:03:00,919 - INFO - Market is closed - waiting for market hours (9:15 AM - 3:30 PM)
+2025-08-05 17:03:04,003 - INFO - [MONEYCONTROL] ITC: Rs.414.15
+2025-08-05 17:03:08,317 - INFO - [CLOSED] ITC @ Rs.414.50 - Bot Stopped (P&L: Rs.-56.23, Charges: Rs.56.23)
+2025-08-05 17:03:08,319 - INFO - Enhanced Intraday ML Trading Bot stopped

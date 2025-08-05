@@ -1,0 +1,21 @@
+# Enhanced ML Trading Bot Requirements
+yfinance>=0.2.18
+pandas>=1.5.0
+numpy>=1.24.0
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+sqlite3
+logging
+datetime
+dataclasses
+json
+threading
+warnings
+
+# ML/AI Dependencies
+tensorflow>=2.10.0
+scikit-learn>=1.2.0
+xgboost>=1.7.0
+textblob>=0.17.1
+joblib>=1.2.0
+matplotlib>=3.6.0
